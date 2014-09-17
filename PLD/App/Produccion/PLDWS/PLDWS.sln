@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Business Entities", "1. Business Entities", "{3609944E-CE61-4EDD-AB31-7B269B94BBFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLDWS.BusinessEntities", "BIM.PLDWS.BusinessEntities\BIM.PLDWS.BusinessEntities.csproj", "{0BDC7FCE-CA6B-47E0-B541-3D7B948EDEAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Data Access", "2. Data Access", "{D54FD71D-1345-45FA-9E75-6D28A1D08D7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLDWS.DataAccess", "BIM.PLDWS.DataAccess\BIM.PLDWS.DataAccess.csproj", "{3F6CB300-0503-4F84-A532-FD040129ED7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Business Logic", "3. Business Logic", "{7F8CEB03-803A-4971-BE43-4E862959BAAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLDWS.BusinessLogic", "BIM.PLDWS.BusinessLogic\BIM.PLDWS.BusinessLogic.csproj", "{43C68A5F-3FEF-42CF-A807-5ADCDC4CD626}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. User Interface", "4. User Interface", "{8BB03738-5270-4119-A2B3-51CA058EC5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLDWS.Website", "BIM.PLDWS.Website\BIM.PLDWS.Website.csproj", "{E31FA9F0-F763-4B70-8BBF-9F71BF350532}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.30.28.50:8080/tfs/bim
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BIM.PLDWS.BusinessEntities\\BIM.PLDWS.BusinessEntities.csproj
+		SccProjectTopLevelParentUniqueName1 = PLDWS.sln
+		SccProjectName1 = BIM.PLDWS.BusinessEntities
+		SccLocalPath1 = BIM.PLDWS.BusinessEntities
+		SccProjectUniqueName2 = BIM.PLDWS.BusinessLogic\\BIM.PLDWS.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName2 = PLDWS.sln
+		SccProjectName2 = BIM.PLDWS.BusinessLogic
+		SccLocalPath2 = BIM.PLDWS.BusinessLogic
+		SccProjectUniqueName3 = BIM.PLDWS.DataAccess\\BIM.PLDWS.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName3 = PLDWS.sln
+		SccProjectName3 = BIM.PLDWS.DataAccess
+		SccLocalPath3 = BIM.PLDWS.DataAccess
+		SccProjectUniqueName4 = BIM.PLDWS.Website\\BIM.PLDWS.Website.csproj
+		SccProjectTopLevelParentUniqueName4 = PLDWS.sln
+		SccProjectName4 = BIM.PLDWS.Website
+		SccLocalPath4 = BIM.PLDWS.Website
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BDC7FCE-CA6B-47E0-B541-3D7B948EDEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDC7FCE-CA6B-47E0-B541-3D7B948EDEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDC7FCE-CA6B-47E0-B541-3D7B948EDEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDC7FCE-CA6B-47E0-B541-3D7B948EDEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6CB300-0503-4F84-A532-FD040129ED7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6CB300-0503-4F84-A532-FD040129ED7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6CB300-0503-4F84-A532-FD040129ED7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6CB300-0503-4F84-A532-FD040129ED7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C68A5F-3FEF-42CF-A807-5ADCDC4CD626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C68A5F-3FEF-42CF-A807-5ADCDC4CD626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C68A5F-3FEF-42CF-A807-5ADCDC4CD626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C68A5F-3FEF-42CF-A807-5ADCDC4CD626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31FA9F0-F763-4B70-8BBF-9F71BF350532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31FA9F0-F763-4B70-8BBF-9F71BF350532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31FA9F0-F763-4B70-8BBF-9F71BF350532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31FA9F0-F763-4B70-8BBF-9F71BF350532}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BDC7FCE-CA6B-47E0-B541-3D7B948EDEAB} = {3609944E-CE61-4EDD-AB31-7B269B94BBFF}
+		{3F6CB300-0503-4F84-A532-FD040129ED7E} = {D54FD71D-1345-45FA-9E75-6D28A1D08D7E}
+		{43C68A5F-3FEF-42CF-A807-5ADCDC4CD626} = {7F8CEB03-803A-4971-BE43-4E862959BAAD}
+		{E31FA9F0-F763-4B70-8BBF-9F71BF350532} = {8BB03738-5270-4119-A2B3-51CA058EC5D3}
+	EndGlobalSection
+EndGlobal

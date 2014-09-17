@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24C332D0-FF98-4686-B30C-992B68252F15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BIM.PLD.Services</RootNamespace>
+    <AssemblyName>BIM.PLD.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitacoraPLD\BitacoraPLDServices.cs" />
+    <Compile Include="BitacoraPLD\Contract\IBitacoraPLDServices.cs" />
+    <Compile Include="CatalogosServices\CatalogoServices.cs" />
+    <Compile Include="CatalogosServices\Contract\ICatalogoServices.cs" />
+    <Compile Include="ConfiguracionPLD\ConfiguracionPLDServices.cs" />
+    <Compile Include="ConfiguracionPLD\Contract\IConfiguracionPLDServices.cs" />
+    <Compile Include="ListaNegraServices\Contract\IListaNegraServices.cs" />
+    <Compile Include="ListaNegraServices\ListaNegraServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoCambio\Contract\ITipoCambioServices.cs" />
+    <Compile Include="TipoCambio\TipoCambioServices.cs" />
+    <Compile Include="TipoListaNegra\Contract\ITipoListaNegra.cs" />
+    <Compile Include="TipoListaNegra\TipoListaNegraServices.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BIM.PLD.BusinessEntities\BIM.PLD.BusinessEntities.csproj">
+      <Project>{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}</Project>
+      <Name>BIM.PLD.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIM.PLD.BusinessLogic\BIM.PLD.BusinessLogic.csproj">
+      <Project>{4BC0B2F6-8B94-4043-9A15-9AD724068F31}</Project>
+      <Name>BIM.PLD.BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

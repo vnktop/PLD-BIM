@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CatalogoServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ICatalogoServices_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <msf:Streamed xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:40000/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:40000/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:40000/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICatalogoServices_ListarCatalogoTipoListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCatalogoTipoListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListarCatalogoTipoListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCatalogoTipoListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListadoCatAccionesPLD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoCatAccionesPLD" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListadoCatAccionesPLD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoCatAccionesPLDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListadoCatTipoLista_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoCatTipoLista" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListadoCatTipoLista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoCatTipoListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListaBusquedaInteligenteTipoTipificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaBusquedaInteligenteTipoTipificacion" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogoServices_ListaBusquedaInteligenteTipoTipificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaBusquedaInteligenteTipoTipificacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICatalogoServices">
+    <wsdl:operation name="ListarCatalogoTipoListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICatalogoServices/ListarCatalogoTipoListaNegra" message="tns:ICatalogoServices_ListarCatalogoTipoListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICatalogoServices/ListarCatalogoTipoListaNegraResponse" message="tns:ICatalogoServices_ListarCatalogoTipoListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoCatAccionesPLD">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICatalogoServices/ListadoCatAccionesPLD" message="tns:ICatalogoServices_ListadoCatAccionesPLD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICatalogoServices/ListadoCatAccionesPLDResponse" message="tns:ICatalogoServices_ListadoCatAccionesPLD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoCatTipoLista">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICatalogoServices/ListadoCatTipoLista" message="tns:ICatalogoServices_ListadoCatTipoLista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICatalogoServices/ListadoCatTipoListaResponse" message="tns:ICatalogoServices_ListadoCatTipoLista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaBusquedaInteligenteTipoTipificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICatalogoServices/ListaBusquedaInteligenteTipoTipificacion" message="tns:ICatalogoServices_ListaBusquedaInteligenteTipoTipificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICatalogoServices/ListaBusquedaInteligenteTipoTipificacionResponse" message="tns:ICatalogoServices_ListaBusquedaInteligenteTipoTipificacion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_ICatalogoServices" type="tns:ICatalogoServices">
+    <wsp:PolicyReference URI="#NetTcpBinding_ICatalogoServices_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="ListarCatalogoTipoListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/ICatalogoServices/ListarCatalogoTipoListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListadoCatAccionesPLD">
+      <soap12:operation soapAction="http://tempuri.org/ICatalogoServices/ListadoCatAccionesPLD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListadoCatTipoLista">
+      <soap12:operation soapAction="http://tempuri.org/ICatalogoServices/ListadoCatTipoLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaBusquedaInteligenteTipoTipificacion">
+      <soap12:operation soapAction="http://tempuri.org/ICatalogoServices/ListaBusquedaInteligenteTipoTipificacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CatalogoServices">
+    <wsdl:port name="NetTcpBinding_ICatalogoServices" binding="tns:NetTcpBinding_ICatalogoServices">
+      <soap12:address location="net.tcp://localhost:40090/CanalService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:40090/CanalService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

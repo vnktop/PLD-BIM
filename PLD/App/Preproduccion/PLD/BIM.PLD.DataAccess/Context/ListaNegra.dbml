@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbPLD" Class="ListaNegraDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.30.28.48\pruebas;Initial Catalog=dbPLD;User ID=usrAdmPld" SettingsObjectName="BIM.PLD.DataAccess.Properties.Settings" SettingsPropertyName="dbPLDConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.stp_ListarSistemasPLD" Method="stp_ListarSistemasPLD">
+    <ElementType Name="stp_ListarSistemasPLDResult">
+      <Column Name="sintSistemaID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="vchNombre" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="vchDescripcion" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="conf" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_InsertaListaNegra" Method="stp_InsertaListaNegra">
+    <Parameter Name="vchidqeq" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchTipoLista" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="vchNombre" Type="System.String" DbType="VarChar(1000)" />
+    <Parameter Name="vchApPaterno" Type="System.String" DbType="VarChar(1000)" />
+    <Parameter Name="vchApMaterno" Type="System.String" DbType="VarChar(1000)" />
+    <Parameter Name="vchCURP" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchRFC" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchFechaNac" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchEstatus" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchDependencia" Type="System.String" DbType="VarChar(120)" />
+    <Parameter Name="vchPuesto" Type="System.String" DbType="VarChar(120)" />
+    <Parameter Name="intIDdispo" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="bitCurpOK" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchIDRel" Type="System.String" DbType="VarChar(120)" />
+    <Parameter Name="vchParentesco" Type="System.String" DbType="VarChar(120)" />
+    <Parameter Name="vchRazonSocial" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="vchRFCMoral" Type="System.String" DbType="VarChar(140)" />
+    <Parameter Name="vchISSSTE" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="vchIMSS" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="vchIngresos" Type="System.String" DbType="VarChar(180)" />
+    <Parameter Name="vchNomCompleto" Type="System.String" DbType="VarChar(3000)" />
+    <Parameter Name="vchApellidos" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="vchEntidad" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="vchGenero" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vchAudUsuario" Type="System.String" DbType="VarChar(180)" />
+    <Parameter Name="sdatFechains" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="vchCadenaNPM" Type="System.String" DbType="VarChar(3000)" />
+    <Parameter Name="vchCadenaNMP" Type="System.String" DbType="VarChar(3000)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.stp_ListarProveedores" Method="stp_ListarProveedores">
+    <ElementType Name="stp_ListarProveedoresResult">
+      <Column Name="iProveedorId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vchDescripcion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_InsertaProveedor" Method="stp_InsertaProveedor">
+    <Parameter Name="vchProveedor" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.stp_CargaListasNegras" Method="stp_CargaListasNegras">
+    <Parameter Name="mensaje" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Parameter Name="iProveedorId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="stp_CargaListasNegrasResult">
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

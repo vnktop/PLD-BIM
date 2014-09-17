@@ -1,0 +1,11 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.Website.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.Website.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.BusinessLogic.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.DataAccess.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.BusinessEntities.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.BusinessLogic.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\bin\BIM.PLDWS.DataAccess.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\obj\Debug\BIM.PLDWS.Website.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\obj\Debug\BIM.PLDWS.Website.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.Website\obj\Debug\BIM.PLDWS.Website.csprojResolveAssemblyReference.cache

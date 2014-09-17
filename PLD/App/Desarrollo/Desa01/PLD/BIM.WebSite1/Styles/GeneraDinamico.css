@@ -1,0 +1,26 @@
+﻿body
+{
+    font-size: .70em;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #404040;
+    background-color: #FFFFE8;
+}
+.hidden
+{
+    display: none;
+}
+.test
+{
+    background-color: #FFCC66;
+}
+
+.estiloAreaTrabajo
+{
+    border-collapse: collapse;
+    border-spacing: 1px;
+    empty-cells: show;
+    caption-side: top;
+    table-layout: auto;
+}

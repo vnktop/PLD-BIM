@@ -1,0 +1,21 @@
+﻿.row
+{
+    clear: left;
+}
+.captionCat
+{
+    float: left;
+    width: 160px;
+    text-align: right;
+/*    background-color: #F7F6F3*/ 
+    color: #284775;
+    height: 25px;
+    padding-right: 5px;
+}
+.dataCat
+{
+    float: left;
+    margin-left: 5px;
+    width: 430px;
+    text-align: left;
+}

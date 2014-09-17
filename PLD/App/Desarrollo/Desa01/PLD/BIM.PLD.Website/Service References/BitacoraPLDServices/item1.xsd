@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:40400/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" />
+  <xs:element name="ListadoBusquedaBitacoraPLD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vchUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intSistema" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListadoBusquedaBitacoraPLDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" minOccurs="0" name="ListadoBusquedaBitacoraPLDResult" nillable="true" type="q1:ArrayOfBitacoraPLD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="desbloquearUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" minOccurs="0" name="parametros" nillable="true" type="q2:desbloqueoBitacoraPLD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="desbloquearUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" minOccurs="0" name="desbloquearUsuarioResult" nillable="true" type="q3:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

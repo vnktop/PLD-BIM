@@ -1,0 +1,9 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\bin\Debug\BIM.PLDWS.BusinessLogic.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\bin\Debug\BIM.PLDWS.BusinessLogic.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\bin\Debug\BIM.PLDWS.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\bin\Debug\BIM.PLDWS.DataAccess.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\bin\Debug\BIM.PLDWS.BusinessEntities.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\bin\Debug\BIM.PLDWS.DataAccess.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\obj\Debug\BIM.PLDWS.BusinessLogic.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\obj\Debug\BIM.PLDWS.BusinessLogic.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessLogic\obj\Debug\BIM.PLDWS.BusinessLogic.csprojResolveAssemblyReference.cache

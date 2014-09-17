@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ListaNegraServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IListaNegraServices_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <msf:Streamed xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:40100/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:40100/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:40100/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IListaNegraServices_InsertarListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_InsertarListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_CargaListasNegras_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargaListasNegras" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_CargaListasNegras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargaListasNegrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_ListarSistemasPLD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarSistemasPLD" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_ListarSistemasPLD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarSistemasPLDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_almacenarArchivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:almacenarArchivo" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_almacenarArchivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:almacenarArchivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_ListarProveedores_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProveedores" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_ListarProveedores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProveedoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_insertarProveedor_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarProveedor" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_insertarProveedor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarProveedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_ListarTipoListaPLD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTipoListaPLD" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_ListarTipoListaPLD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTipoListaPLDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_InsertarTipoLista_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarTipoLista" />
+  </wsdl:message>
+  <wsdl:message name="IListaNegraServices_InsertarTipoLista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarTipoListaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IListaNegraServices">
+    <wsdl:operation name="InsertarListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/InsertarListaNegra" message="tns:IListaNegraServices_InsertarListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/InsertarListaNegraResponse" message="tns:IListaNegraServices_InsertarListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargaListasNegras">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/CargaListasNegras" message="tns:IListaNegraServices_CargaListasNegras_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/CargaListasNegrasResponse" message="tns:IListaNegraServices_CargaListasNegras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarSistemasPLD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/ListarSistemasPLD" message="tns:IListaNegraServices_ListarSistemasPLD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/ListarSistemasPLDResponse" message="tns:IListaNegraServices_ListarSistemasPLD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="almacenarArchivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/almacenarArchivo" message="tns:IListaNegraServices_almacenarArchivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/almacenarArchivoResponse" message="tns:IListaNegraServices_almacenarArchivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProveedores">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/ListarProveedores" message="tns:IListaNegraServices_ListarProveedores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/ListarProveedoresResponse" message="tns:IListaNegraServices_ListarProveedores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarProveedor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/insertarProveedor" message="tns:IListaNegraServices_insertarProveedor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/insertarProveedorResponse" message="tns:IListaNegraServices_insertarProveedor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoListaPLD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/ListarTipoListaPLD" message="tns:IListaNegraServices_ListarTipoListaPLD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/ListarTipoListaPLDResponse" message="tns:IListaNegraServices_ListarTipoListaPLD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarTipoLista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IListaNegraServices/InsertarTipoLista" message="tns:IListaNegraServices_InsertarTipoLista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IListaNegraServices/InsertarTipoListaResponse" message="tns:IListaNegraServices_InsertarTipoLista_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IListaNegraServices" type="tns:IListaNegraServices">
+    <wsp:PolicyReference URI="#NetTcpBinding_IListaNegraServices_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="InsertarListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/InsertarListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargaListasNegras">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/CargaListasNegras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarSistemasPLD">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/ListarSistemasPLD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="almacenarArchivo">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/almacenarArchivo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProveedores">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/ListarProveedores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarProveedor">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/insertarProveedor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoListaPLD">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/ListarTipoListaPLD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarTipoLista">
+      <soap12:operation soapAction="http://tempuri.org/IListaNegraServices/InsertarTipoLista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ListaNegraServices">
+    <wsdl:port name="NetTcpBinding_IListaNegraServices" binding="tns:NetTcpBinding_IListaNegraServices">
+      <soap12:address location="net.tcp://localhost:40190/CanalService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:40190/CanalService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

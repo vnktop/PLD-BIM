@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://avaluoswebservicesqa.fovissste.com.mx/RecibeAvaluosWebService.asmx?wsdl" docRef="http://avaluoswebservicesqa.fovissste.com.mx/RecibeAvaluosWebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://avaluoswebservicesqa.fovissste.com.mx/RecibeAvaluosWebService.asmx" xmlns:q1="http://avaluoswebservice.fovissste.com.mx/" binding="q1:RecibeAvaluosWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://avaluoswebservicesqa.fovissste.com.mx/RecibeAvaluosWebService.asmx" xmlns:q2="http://avaluoswebservice.fovissste.com.mx/" binding="q2:RecibeAvaluosWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

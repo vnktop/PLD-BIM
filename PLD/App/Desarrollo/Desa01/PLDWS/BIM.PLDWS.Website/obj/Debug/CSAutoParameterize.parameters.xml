@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PLDConexionString-Web.config Connection String" description="PLDConexionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultvalue="Data Source=local;Initial Catalog=dbPLD;User ID=usrAdmPld; Password=pwdAdmPld;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\TFS\\PLD\\App\\Desarrollo\\Desa01\\PLDWS\\BIM\.PLDWS\.Website\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PLDConexionString']/@connectionString" />
+  </parameter>
+</parameters>

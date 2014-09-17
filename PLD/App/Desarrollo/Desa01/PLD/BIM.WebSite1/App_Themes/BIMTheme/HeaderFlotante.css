@@ -1,0 +1,8 @@
+﻿/* So the overflow scrolls */
+.headerFlotante {overflow:auto;}
+
+/* Keep the header cells positioned as we scroll */
+.headerFlotante table th {position:relative;}
+
+/* For alignment of the scroll bar */
+.headerFlotante table tbody {overflow-x:hidden;} 

@@ -1,0 +1,312 @@
+﻿body 
+{
+    margin: 0px;
+}
+
+div#idCard 
+{
+    position: absolute;
+    padding-top: 10px;
+    top: 0;
+    right: 62px;
+    width: 342px;
+    height: 60px;
+}
+
+div#idHeader
+{
+/*    height: 70px; 112*/
+   /* background: url("../images/fondoTopSeg.jpg") repeat-x; */
+    background: #D8D8D8;
+    height: 112px;
+    width: 100%;
+}
+.topTitleValue
+{
+    float: left;
+    width: 100px;
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #333333;/*#194678;*/
+	font-size: 12px;
+    padding-top: 3px;
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: right;
+   
+}
+
+.topValue
+{
+    text-align: left;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+/* SEGURIDAD */
+/*estilos para menu superior */
+#mnuToolBar
+{
+    position: absolute;
+    top: 89px;
+    left: 0;
+/*    background-color: Black; */
+    height: 22px;
+    width: 100%;
+}
+
+.mnu
+{
+    float: left;
+    width: 100px;
+    /*height: 20px;*/
+    text-align: center;
+   /* background-color:Transparent;*/
+   background-color:#585858;
+	height: 22px;
+}
+.mnu a:link {z-index:auto; background-color:transparent;color:#ffffff;text-decoration:none;
+    BORDER-RIGHT:#FF8000 1px solid; 
+	BORDER-TOP: #FF8000 1px solid; 
+	BORDER-LEFT: #FF8000 1px solid; 
+	BORDER-BOTTOM: #FF8000 1px solid;
+	padding:5px 20px 5px 20px;cursor:hand;display:block;font-size:8pt;font-family:tahoma;}
+.mnu a:visited {z-index:auto; background-color:transparent;color:#ffffff;text-decoration:none;
+    BORDER-RIGHT:#003366 1px solid; 
+	BORDER-TOP: #003366 0px solid; 
+	BORDER-LEFT: #cccccc 1px solid; 
+	BORDER-BOTTOM: #333333 1px solid;
+	padding:5px 20px 5px 20px;cursor:hand;display:block;font-size:8pt;font-family:tahoma;}
+
+.mnu a:hover {z-index:auto; background-color:#828EB6;background: url(../img/fondoMenuHeader2.jpg);color:#ffffff;text-decoration:none;
+	BORDER-RIGHT:#003366 1px solid; 
+	BORDER-TOP: #003366 0px solid; 
+	BORDER-LEFT: #cccccc 1px solid; 
+	BORDER-BOTTOM: #333333 1px solid;
+	padding:5px 20px 5px 20px;cursor:hand;display:block;font-size:8pt;font-family:tahoma;}
+.mnu a:active {z-index:auto; background-color:transparent;color:#ffffff;text-decoration:none;
+    BORDER-RIGHT:#003366 1px solid; 
+	BORDER-TOP: #003366 0px solid; 
+	BORDER-LEFT: #cccccc 1px solid; 
+	BORDER-BOTTOM: #333333 1px solid;
+	padding:5px 20px 5px 20px;cursor:hand;display:block;font-size:8pt;font-family:tahoma;}
+/*termina estilos para menu superior */
+
+.contCenter
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TitBot/*ocupada*/
+{
+    font-weight: bold;
+    font-size: 13px;
+	font-family: Verdana, Helvetica, sans-serif;
+/*    background: url(../img/fondoTit.gif); 
+	background-repeat:no-repeat;
+	background-position:left;
+	background-color:transparent; */
+    color: #2d028e;
+	text-transform:uppercase;
+	border-right:#2d028e 0px solid; 
+	border-top: #828EB6 0px solid; 
+	border-left: #2d028e 0px solid; 
+	border-bottom: #828EB6 0px solid;
+	padding-left: 35px;
+	padding-top: 5px;
+	padding-right:10px;
+	padding-bottom: 5px;
+}
+
+table.grid
+{
+    margin-left:auto; 
+    margin-right:auto;
+    font-size: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+    color:#000000;
+    font-weight: bold;
+    background-color:#F8F8F8;
+    border: #003366 1px solid; 
+    cellspacing: 2;
+    margin-bottom: 0px;
+}	
+.HeaderStyle
+{
+    font-size: 11px;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-align: center;
+    color:#000000;
+    font-weight: bold;
+    background-color:#EA8C2D;
+}	
+
+.ItemStyle
+{
+    font-weight: normal;
+    font-size: 9px;
+    text-align: center;
+    font-family: Verdana, Helvetica, sans-serif;
+    valign: TOP;  
+    background-color: #d0d7e6; 
+}
+
+.AlterningItem 
+{
+    font-weight: normal;
+    font-size: 9px;
+    text-align: center;
+    font-family: Verdana, Helvetica, sans-serif;
+    valign: TOP;  
+    background-color: #f8f8f8; 
+}
+
+SelectedItem  
+{
+    font-size: 8px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #828eb6;
+}
+
+EditItem 
+{
+    font-size: 9px;
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #828eb6;
+}
+
+
+FooterStyle  
+{
+    text-align:left;
+    color: #330099; 
+/*    HorizontalAlign:Left; 
+    ForeColor:#330099;  */
+    background-color:#FFFFCC;
+}
+
+PagerStyle 
+{
+/*    HorizontalAlign:Center; 
+    ForeColor:#330099; 
+    BackColor:#FFFFCC; */
+    text-align: center;
+    color: #330099; 
+    background-color: #FFFFCC;
+}
+
+.boton {/*utiliza*/
+	height: 18px;
+	font-family: Verdana,Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #003399;
+	text-shadow: White;
+	background-image: url(../img/boton.jpg);
+	background-position: left top;
+	text-align: center;
+	margin: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 1px solid #828eb6;
+	border-right: 1px solid #828eb6;
+	border-bottom: 1px solid #828eb6;
+	border-left: 1px solid #828eb6;
+    cursor: pointer;
+}
+
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.modalMensaje 
+{
+/*    display: none; */
+    width: 200px; 
+    background-color: #ffffff;
+    border-width: 2px; 
+    border-color: #000000; 
+    border-style: solid; 
+    padding: 20px;
+    z-index: 8000;
+}
+
+.field 
+{
+    float: left;
+    width: 80px;   
+    text-align: right;
+}
+
+.fieldUsuarios
+{
+    float: left;
+    width: 120px;   
+    text-align: right;
+}
+
+.EsquemaSeg
+{
+	position:  static;
+	width: 550px;
+	text-align: center;	
+}
+
+.center
+{
+	position: static;
+	width: 100px;
+	text-align: left;	
+}
+
+.value
+{
+    float: left;
+    width: 73px;
+    text-align:left;
+}
+
+.valueUsuarios
+{
+    float: left;
+    width: 380px;
+    text-align:left;
+}
+
+.valueUsuarios span
+{
+    color: Red;
+}
+
+.updateProgress
+{
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    position:absolute;
+    width: 20%;
+    height: 50px;
+    top: 70%;
+    left: 44%;
+    z-index: 10000;
+}
+
+.msgInfo
+{
+    color:Blue;
+    font-weight: bold;
+}
+.msgError
+{
+    color: Red;
+    font-weight: bold;
+}

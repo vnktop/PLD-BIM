@@ -1,0 +1,12 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.Services.dll.config
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.Services.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.Services.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.BusinessLogic.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.DataAccess.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.BusinessEntities.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.BusinessLogic.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\bin\Debug\BIM.PLD.DataAccess.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\obj\Debug\BIM.PLD.Services.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.Services\obj\Debug\BIM.PLD.Services.pdb

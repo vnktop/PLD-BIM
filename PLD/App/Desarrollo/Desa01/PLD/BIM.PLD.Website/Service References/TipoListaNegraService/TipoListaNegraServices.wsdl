@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TipoListaNegraServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ITipoListaNegra_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <msf:Streamed xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:40500/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:40500/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:40500/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITipoListaNegra_InsertarTipoListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarTipoListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_InsertarTipoListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarTipoListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_ListadoBusquedaTipoListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoBusquedaTipoListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_ListadoBusquedaTipoListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoBusquedaTipoListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_editarTipoListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:editarTipoListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_editarTipoListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editarTipoListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_eliminarTipoListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarTipoListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_eliminarTipoListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarTipoListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_LeerExisteciaRegistroTipoListaNegra_InputMessage">
+    <wsdl:part name="parameters" element="tns:LeerExisteciaRegistroTipoListaNegra" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_LeerExisteciaRegistroTipoListaNegra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LeerExisteciaRegistroTipoListaNegraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_InsertarTipoTipificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarTipoTipificacion" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_InsertarTipoTipificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarTipoTipificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_editarTipoTipificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:editarTipoTipificacion" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_editarTipoTipificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editarTipoTipificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_LeerExisteciaRegistroTipoTipificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:LeerExisteciaRegistroTipoTipificacion" />
+  </wsdl:message>
+  <wsdl:message name="ITipoListaNegra_LeerExisteciaRegistroTipoTipificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LeerExisteciaRegistroTipoTipificacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITipoListaNegra">
+    <wsdl:operation name="InsertarTipoListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/InsertarTipoListaNegra" message="tns:ITipoListaNegra_InsertarTipoListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/InsertarTipoListaNegraResponse" message="tns:ITipoListaNegra_InsertarTipoListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoBusquedaTipoListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/ListadoBusquedaTipoListaNegra" message="tns:ITipoListaNegra_ListadoBusquedaTipoListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/ListadoBusquedaTipoListaNegraResponse" message="tns:ITipoListaNegra_ListadoBusquedaTipoListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editarTipoListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/editarTipoListaNegra" message="tns:ITipoListaNegra_editarTipoListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/editarTipoListaNegraResponse" message="tns:ITipoListaNegra_editarTipoListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTipoListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/eliminarTipoListaNegra" message="tns:ITipoListaNegra_eliminarTipoListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/eliminarTipoListaNegraResponse" message="tns:ITipoListaNegra_eliminarTipoListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LeerExisteciaRegistroTipoListaNegra">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/LeerExisteciaRegistroTipoListaNegra" message="tns:ITipoListaNegra_LeerExisteciaRegistroTipoListaNegra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/LeerExisteciaRegistroTipoListaNegraResponse" message="tns:ITipoListaNegra_LeerExisteciaRegistroTipoListaNegra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarTipoTipificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/InsertarTipoTipificacion" message="tns:ITipoListaNegra_InsertarTipoTipificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/InsertarTipoTipificacionResponse" message="tns:ITipoListaNegra_InsertarTipoTipificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editarTipoTipificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/editarTipoTipificacion" message="tns:ITipoListaNegra_editarTipoTipificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/editarTipoTipificacionResponse" message="tns:ITipoListaNegra_editarTipoTipificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LeerExisteciaRegistroTipoTipificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITipoListaNegra/LeerExisteciaRegistroTipoTipificacion" message="tns:ITipoListaNegra_LeerExisteciaRegistroTipoTipificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITipoListaNegra/LeerExisteciaRegistroTipoTipificacionResponse" message="tns:ITipoListaNegra_LeerExisteciaRegistroTipoTipificacion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_ITipoListaNegra" type="tns:ITipoListaNegra">
+    <wsp:PolicyReference URI="#NetTcpBinding_ITipoListaNegra_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="InsertarTipoListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/InsertarTipoListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListadoBusquedaTipoListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/ListadoBusquedaTipoListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editarTipoListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/editarTipoListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTipoListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/eliminarTipoListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerExisteciaRegistroTipoListaNegra">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/LeerExisteciaRegistroTipoListaNegra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarTipoTipificacion">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/InsertarTipoTipificacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editarTipoTipificacion">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/editarTipoTipificacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeerExisteciaRegistroTipoTipificacion">
+      <soap12:operation soapAction="http://tempuri.org/ITipoListaNegra/LeerExisteciaRegistroTipoTipificacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TipoListaNegraServices">
+    <wsdl:port name="NetTcpBinding_ITipoListaNegra" binding="tns:NetTcpBinding_ITipoListaNegra">
+      <soap12:address location="net.tcp://localhost:40590/TipoListaNegraServices" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:40590/TipoListaNegraServices</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

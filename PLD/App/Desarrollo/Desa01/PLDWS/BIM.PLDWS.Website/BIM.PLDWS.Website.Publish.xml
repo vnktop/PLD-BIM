@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Victor.Pineda\Dropbox\Proyectos\Sitio\PLDWS" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/BIM.PLDWS.DataAccess.dll" publishTime="04/04/2014 11:34:21" />
+    <file relUrl="bin/BIM.PLDWS.DataAccess.pdb" publishTime="04/04/2014 11:34:21" />
+    <file relUrl="bin/BIM.PLDWS.Website.dll" publishTime="04/04/2014 11:34:22" />
+    <file relUrl="bin/BIM.PLDWS.BusinessLogic.dll" publishTime="04/04/2014 11:34:22" />
+    <file relUrl="bin/BIM.PLDWS.BusinessEntities.dll" publishTime="04/04/2014 11:34:21" />
+    <file relUrl="Web.config" publishTime="04/04/2014 11:35:49" />
+    <file relUrl="ClientAccessPolicy.xml" publishTime="08/26/2013 16:44:52" />
+    <file relUrl="bin/BIM.PLDWS.BusinessEntities.pdb" publishTime="04/04/2014 11:34:21" />
+    <file relUrl="ServiceCaroline.svc" publishTime="08/26/2013 16:44:52" />
+    <file relUrl="bin/BIM.PLDWS.BusinessLogic.pdb" publishTime="04/04/2014 11:34:22" />
+    <file relUrl="Service2.svc" publishTime="08/26/2013 16:44:52" />
+    <file relUrl="bin/BIM.PLDWS.Website.pdb" publishTime="04/04/2014 11:34:22" />
+  </publishProfile>
+</publishData>

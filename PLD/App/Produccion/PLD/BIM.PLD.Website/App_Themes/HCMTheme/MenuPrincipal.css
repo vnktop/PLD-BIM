@@ -1,0 +1,37 @@
+﻿/*Menu Item*/
+.menuDynamic
+{
+	border-width: 2px;
+	border-color: #FFFFFF;
+	background-color: #006847;
+	color: #FFFFFF;
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+    padding-right:3px;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+    font-family:Tahoma;
+     border-bottom-color:#D3E8A3;
+    /*height:30px;*/
+}
+
+.menuDynamicHover
+{	
+	background-color: #339933;	
+}
+
+/*Menu Papa*/
+.menuBar
+{
+	color: #FFFFFF;
+	background-color: #006847;/*#006600;*/
+	padding:1px;	
+    height:25px;
+}
+
+.menuBarHover
+{	
+	background-color: #339933;	
+}

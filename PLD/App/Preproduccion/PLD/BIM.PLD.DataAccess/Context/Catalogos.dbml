@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbPLD" Class="CatalogosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.30.28.48\pruebas;Initial Catalog=dbPLD;User ID=usrAdmPld" SettingsObjectName="BIM.PLD.DataAccess.Properties.Settings" SettingsPropertyName="dbPLDConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.stp_ListarCatAccionesPLD" Method="stp_ListarCatAccionesPLD">
+    <ElementType Name="stp_ListarCatAccionesPLDResult">
+      <Column Name="INTACCIONPLDID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VCHDESCRIPCION" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="BITESTATUS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_ListarCatTipoListaNegra" Method="stp_ListarCatTipoListaNegra">
+    <ElementType Name="stp_ListarCatTipoListaNegraResult">
+      <Column Name="intTipoTipificacionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vchDescripcion" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_ListarCatTipoLista" Method="stp_ListarCatTipoLista">
+    <ElementType Name="stp_ListarCatTipoListaResult">
+      <Column Name="vchTipoLista" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="intTipoListaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_BusquedaInteligenteTipoTipificacion" Method="stp_BusquedaInteligenteTipoTipificacion">
+    <Parameter Name="Cadena" Parameter="cadena" Type="System.String" DbType="VarChar(2000)" />
+    <ElementType Name="stp_BusquedaInteligenteTipoTipificacionResult">
+      <Column Name="intTipoTipificacionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vchDescripcion" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

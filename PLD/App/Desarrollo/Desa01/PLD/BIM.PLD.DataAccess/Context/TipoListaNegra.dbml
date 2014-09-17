@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbPLD" Class="TipoListaNegraDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.30.28.48\Pruebas;Initial Catalog=dbCatalogosGrales;Persist Security Info=True;User ID=usrAdmPld" SettingsObjectName="BIM.PLD.DataAccess.Properties.Settings" SettingsPropertyName="dbPLD_ConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.stp_CRUDTipoListaNegra" Method="stp_CRUDTipoListaNegra">
+    <Parameter Name="intResultado" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="intAccion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="intTipoListaID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="vchTipoLista" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="intTipoTipificacionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VCDDESCRIPCION" Parameter="vCDDESCRIPCION" Type="System.String" DbType="VarChar(256)" />
+    <Parameter Name="vchPais" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="stp_CRUDTipoListaNegraResult">
+      <Column Name="intTipoListaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vchTipoLista" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="intTipoTipificacionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vchTipoTipificacion" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="VCDDESCRIPCION" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="vchPais" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

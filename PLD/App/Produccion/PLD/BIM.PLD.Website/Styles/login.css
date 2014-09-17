@@ -1,0 +1,127 @@
+﻿body     
+{
+    width: 1042px;
+    font-family: Trebuchet MS,Verdana,Arial,Helvetica,sans-serif;
+    background-color:#F6F6F6;
+}
+
+.Titulo
+{
+	font-family: Verdana,Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:120%;
+    text-align: center;
+}
+
+.login 
+{
+	font-family: Verdana,Helvetica, sans-serif;
+    text-align: center;
+}
+
+table#loginweb
+{
+    margin-left:auto; 
+    margin-right:auto;
+}
+.boton {/*utiliza*/
+	height: 18px;
+	font-family: Verdana,Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #003399;
+	text-shadow: White;
+	background-image: url(../img/boton.jpg);
+	background-position: left top;
+	text-align: center;
+	margin: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 1px solid #828eb6;
+	border-right: 1px solid #828eb6;
+	border-bottom: 1px solid #828eb6;
+	border-left: 1px solid #828eb6;
+
+}
+
+.textbox
+{
+	background-color: #ffffff;
+	background-position: center center;
+	text-align: left;
+	display: inline;
+	margin: 0px;
+	padding: 1px;
+	border-top: 2px solid #003366;
+	border-right: 1px solid #B7B7B7;
+	border-bottom: 1px solid #B7B7B7;
+	border-left: 2px solid #003366;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-style: normal;
+	line-height: normal;
+}
+
+.textlogin { /*OCUPADA*/
+	font-size: 11px;
+	font-family:Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000; /* prin*/
+	text-decoration: none;
+	border-width: 1px;
+	padding-top: 1px;
+	padding-right:6px;
+	padding-bottom: 1px;
+	padding-left: 6px;
+}
+
+#PageRootMaster
+{
+    
+    margin-left: 120px;
+    margin-right: auto;
+   
+}
+
+.footerLegend {
+    background-color: #828085;
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1040px;
+    text-align: center;
+    width: 1040px;
+    
+}
+
+.buttonSkin
+{   
+    background: transparent url('../Images/Botones/bt_skin.png') no-repeat top left;  
+    display: inline-block;
+    float:none;
+    line-height: 8px; 
+    height: 60px; 
+    width:120px;
+    padding-left: 7px;  
+    padding-top:12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 11px;    
+}
+
+.btnIngresar {
+	background:url(../Images/Botones/btnIngresar.png) no-repeat;
+    cursor:pointer;
+    width: 130px;
+    height: 35px;
+    border: none;
+    background-position: center ;
+    
+}

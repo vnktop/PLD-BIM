@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbPLD" Class="TipoCambioDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.30.28.48\pruebas;Initial Catalog=dbPLD;Persist Security Info=True;User ID=usrAdmPld" SettingsObjectName="BIM.PLD.DataAccess.Properties.Settings" SettingsPropertyName="dbPLDConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.stp_getTipoCambio" Method="stp_getTipoCambio">
+    <ElementType Name="stp_getTipoCambioResult">
+      <Column Name="vchDescripcionCMO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="vchDescripcionCGE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="decValorCTC" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="datFchDeCierreCTC" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_InsertaTipoCambioManual" Method="stp_InsertaTipoCambioManual">
+    <Parameter Name="FechaCierre" Parameter="fechaCierre" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="decValor" Type="System.Decimal" DbType="Decimal(15,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

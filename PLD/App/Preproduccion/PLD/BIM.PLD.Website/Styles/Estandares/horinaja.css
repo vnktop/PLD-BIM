@@ -1,0 +1,56 @@
+/* horinaja default */
+.horinaja ul{
+	position:relative;
+	width:850px;
+	margin-left:-40px;
+	
+}
+.horinaja ul li{
+	background:transparent;
+	display:block;
+	top:0;
+	height:350px;
+	width: 850px;
+}
+
+
+
+.horinaja ul li img{
+	height:350px;
+	width: 850px;
+	border:0px solid #FFF;
+}
+
+
+/* horinaja pagination */
+ol.horinaja_pagination{
+	height:40px;
+	margin: 0 auto;
+	position:relative;
+	background:transparent;
+	padding:0px 0 0 0;
+	clear:both;
+	color:#000;
+
+	width:850px;
+	float:left;
+}
+ol.horinaja_pagination li{
+	float:left;
+	height:40px;
+	display:block;
+	color:#000;
+}
+ol.horinaja_pagination li a{
+	height:30px;
+	display:block;
+	background:transparent;
+	float:left;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	color:#000;
+	font-size:15px;
+	padding: 10px 0 0 0;
+	cursor:pointer;
+}

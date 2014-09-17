@@ -1,0 +1,8 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\bin\Debug\BIM.PLD.DataAccess.dll.config
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\bin\Debug\BIM.PLD.DataAccess.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\bin\Debug\BIM.PLD.DataAccess.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\bin\Debug\BIM.PLD.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\bin\Debug\BIM.PLD.BusinessEntities.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\obj\Debug\BIM.PLD.DataAccess.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.DataAccess\obj\Debug\BIM.PLD.DataAccess.pdb

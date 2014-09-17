@@ -1,0 +1,170 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Bussines Entities", "1. Bussines Entities", "{1BB680F8-FB05-4745-B5BC-AC04056ADEC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Data Access", "2. Data Access", "{433E42D6-A12E-494E-85EF-965EB703DEA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.BusinessEntities", "BIM.PLD.BusinessEntities\BIM.PLD.BusinessEntities.csproj", "{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.DataAccess", "BIM.PLD.DataAccess\BIM.PLD.DataAccess.csproj", "{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Business Logic", "3. Business Logic", "{46E4689C-8978-4BEF-A813-A2153812FF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.BusinessLogic", "BIM.PLD.BusinessLogic\BIM.PLD.BusinessLogic.csproj", "{4BC0B2F6-8B94-4043-9A15-9AD724068F31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Services", "4. Services", "{DB48FEAE-7056-4ADD-B106-2D6579314048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.Services", "BIM.PLD.Services\BIM.PLD.Services.csproj", "{24C332D0-FF98-4686-B30C-992B68252F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.TestHost", "BIM.PLD.TestHost\BIM.PLD.TestHost.csproj", "{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. User Interface", "5. User Interface", "{C6D8442D-E328-4A91-A96B-6B6EAD04988F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.Website", "BIM.PLD.Website\BIM.PLD.Website.csproj", "{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIM.PLD.TestHostInstall", "BIM.PLD.TestHostInstall\BIM.PLD.TestHostInstall.csproj", "{2729223C-9E37-4B04-9770-FB13DD79DA72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Setup", "6. Setup", "{2AF240F7-9846-45CE-8EDB-90DE9CA66FC1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BIM.PLD.Setup", "BIM.PLD.Setup\BIM.PLD.Setup.vdproj", "{9D1C1308-892D-4ABF-A3B3-014459A36629}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.30.28.50:8080/tfs/bim
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BIM.PLD.BusinessEntities\\BIM.PLD.BusinessEntities.csproj
+		SccProjectTopLevelParentUniqueName1 = PLD.sln
+		SccProjectName1 = BIM.PLD.BusinessEntities
+		SccLocalPath1 = BIM.PLD.BusinessEntities
+		SccProjectUniqueName2 = BIM.PLD.DataAccess\\BIM.PLD.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = PLD.sln
+		SccProjectName2 = BIM.PLD.DataAccess
+		SccLocalPath2 = BIM.PLD.DataAccess
+		SccProjectUniqueName3 = BIM.PLD.BusinessLogic\\BIM.PLD.BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName3 = PLD.sln
+		SccProjectName3 = BIM.PLD.BusinessLogic
+		SccLocalPath3 = BIM.PLD.BusinessLogic
+		SccProjectUniqueName4 = BIM.PLD.Services\\BIM.PLD.Services.csproj
+		SccProjectTopLevelParentUniqueName4 = PLD.sln
+		SccProjectName4 = BIM.PLD.Services
+		SccLocalPath4 = BIM.PLD.Services
+		SccProjectUniqueName5 = BIM.PLD.TestHost\\BIM.PLD.TestHost.csproj
+		SccProjectTopLevelParentUniqueName5 = PLD.sln
+		SccProjectName5 = BIM.PLD.TestHost
+		SccLocalPath5 = BIM.PLD.TestHost
+		SccProjectUniqueName6 = BIM.PLD.Website\\BIM.PLD.Website.csproj
+		SccProjectTopLevelParentUniqueName6 = PLD.sln
+		SccProjectName6 = BIM.PLD.Website
+		SccLocalPath6 = BIM.PLD.Website
+		SccProjectUniqueName7 = BIM.PLD.TestHostInstall\\BIM.PLD.TestHostInstall.csproj
+		SccProjectTopLevelParentUniqueName7 = PLD.sln
+		SccProjectName7 = BIM.PLD.TestHostInstall
+		SccLocalPath7 = BIM.PLD.TestHostInstall
+		SccProjectUniqueName8 = BIM.PLD.Setup\\BIM.PLD.Setup.vdproj
+		SccProjectTopLevelParentUniqueName8 = PLD.sln
+		SccProjectName8 = BIM.PLD.Setup
+		SccLocalPath8 = BIM.PLD.Setup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED}.Release|x86.ActiveCfg = Release|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31}.Release|x86.ActiveCfg = Release|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{24C332D0-FF98-4686-B30C-992B68252F15}.Release|x86.ActiveCfg = Release|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}.Release|x86.ActiveCfg = Release|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2729223C-9E37-4B04-9770-FB13DD79DA72}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D1C1308-892D-4ABF-A3B3-014459A36629}.Debug|Any CPU.ActiveCfg = Debug
+		{9D1C1308-892D-4ABF-A3B3-014459A36629}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{9D1C1308-892D-4ABF-A3B3-014459A36629}.Debug|x86.ActiveCfg = Debug
+		{9D1C1308-892D-4ABF-A3B3-014459A36629}.Release|Any CPU.ActiveCfg = Release
+		{9D1C1308-892D-4ABF-A3B3-014459A36629}.Release|Mixed Platforms.ActiveCfg = Release
+		{9D1C1308-892D-4ABF-A3B3-014459A36629}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6352A6D6-EC61-4D94-826C-2D82FFEFA6ED} = {1BB680F8-FB05-4745-B5BC-AC04056ADEC2}
+		{8A11DDD4-36D1-488F-8F76-7DACD23E76B5} = {433E42D6-A12E-494E-85EF-965EB703DEA5}
+		{4BC0B2F6-8B94-4043-9A15-9AD724068F31} = {46E4689C-8978-4BEF-A813-A2153812FF3F}
+		{24C332D0-FF98-4686-B30C-992B68252F15} = {DB48FEAE-7056-4ADD-B106-2D6579314048}
+		{D20F4DDB-94D4-4990-8D87-E06DC2083EE2} = {DB48FEAE-7056-4ADD-B106-2D6579314048}
+		{2729223C-9E37-4B04-9770-FB13DD79DA72} = {DB48FEAE-7056-4ADD-B106-2D6579314048}
+		{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0} = {C6D8442D-E328-4A91-A96B-6B6EAD04988F}
+		{9D1C1308-892D-4ABF-A3B3-014459A36629} = {2AF240F7-9846-45CE-8EDB-90DE9CA66FC1}
+	EndGlobalSection
+EndGlobal

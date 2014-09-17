@@ -1,0 +1,5 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.BusinessEntities\bin\Debug\BIM.PLD.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.BusinessEntities\bin\Debug\BIM.PLD.BusinessEntities.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.BusinessEntities\obj\Debug\BIM.PLD.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLD\BIM.PLD.BusinessEntities\obj\Debug\BIM.PLD.BusinessEntities.pdb

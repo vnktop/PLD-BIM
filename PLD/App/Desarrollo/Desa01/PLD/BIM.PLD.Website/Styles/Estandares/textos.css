@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@font-face {
+    font-family: 'PresidenciaBase';
+    src: url('fonts/presidenciabase-webfont.eot');
+    src: url('fonts/presidenciabase-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciabase-webfont.woff') format('woff'),
+         url('fonts/presidenciabase-webfont.ttf') format('truetype'),
+         url('fonts/presidenciabase-webfont.svg#PresidenciaBaseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaBaseCifrasClasicas';
+    src: url('fonts/presidenciabase-cc-webfont.eot');
+    src: url('fonts/presidenciabase-cc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciabase-cc-webfont.woff') format('woff'),
+         url('fonts/presidenciabase-cc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciabase-cc-webfont.svg#PresidenciaBaseCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaBaseItalicas';
+    src: url('fonts/presidenciabase-italicas-webfont.eot');
+    src: url('fonts/presidenciabase-italicas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciabase-italicas-webfont.woff') format('woff'),
+         url('fonts/presidenciabase-italicas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciabase-italicas-webfont.svg#PresidenciaBaseItalicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaItasCifrasClasicas';
+    src: url('fonts/presidenciabase-italicascc-webfont.eot');
+    src: url('fonts/presidenciabase-italicascc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciabase-italicascc-webfont.woff') format('woff'),
+         url('fonts/presidenciabase-italicascc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciabase-italicascc-webfont.svg#PresidenciaItasCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaBaseVersalitas';
+    src: url('fonts/presidenciabase-versalitas-webfont.eot');
+    src: url('fonts/presidenciabase-versalitas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciabase-versalitas-webfont.woff') format('woff'),
+         url('fonts/presidenciabase-versalitas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciabase-versalitas-webfont.svg#PresidenciaBaseVersalitas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFina';
+    src: url('fonts/presidenciafina-webfont.eot');
+    src: url('fonts/presidenciafina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafina-webfont.woff') format('woff'),
+         url('fonts/presidenciafina-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafina-webfont.svg#PresidenciaFinaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFinaCifrasClasicas';
+    src: url('fonts/presidenciafina-cc-webfont.eot');
+    src: url('fonts/presidenciafina-cc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafina-cc-webfont.woff') format('woff'),
+         url('fonts/presidenciafina-cc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafina-cc-webfont.svg#PresidenciaFinaCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFinaItalicas';
+    src: url('fonts/presidenciafina-italicas-webfont.eot');
+    src: url('fonts/presidenciafina-italicas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafina-italicas-webfont.woff') format('woff'),
+         url('fonts/presidenciafina-italicas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafina-italicas-webfont.svg#PresidenciaFinaItalicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaItasCifrasClasicas';
+    src: url('fonts/presidenciafina-italicascc-webfont.eot');
+    src: url('fonts/presidenciafina-italicascc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafina-italicascc-webfont.woff') format('woff'),
+         url('fonts/presidenciafina-italicascc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafina-italicascc-webfont.svg#PresidenciaItasCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFinaVersalitas';
+    src: url('fonts/presidenciafina-versalitas-webfont.eot');
+    src: url('fonts/presidenciafina-versalitas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafina-versalitas-webfont.woff') format('woff'),
+         url('fonts/presidenciafina-versalitas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafina-versalitas-webfont.svg#PresidenciaFinaVersalitas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFirme';
+    src: url('fonts/presidenciafirme-webfont.eot');
+    src: url('fonts/presidenciafirme-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafirme-webfont.woff') format('woff'),
+         url('fonts/presidenciafirme-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafirme-webfont.svg#PresidenciaFirmeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFirmCifrasClasicas';
+    src: url('fonts/presidenciafirme-cc-webfont.eot');
+    src: url('fonts/presidenciafirme-cc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafirme-cc-webfont.woff') format('woff'),
+         url('fonts/presidenciafirme-cc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafirme-cc-webfont.svg#PresidenciaFirmCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFirmeItalicas';
+    src: url('fonts/presidenciafirme-italicas-webfont.eot');
+    src: url('fonts/presidenciafirme-italicas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafirme-italicas-webfont.woff') format('woff'),
+         url('fonts/presidenciafirme-italicas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafirme-italicas-webfont.svg#PresidenciaFirmeItalicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaItasCifrasClasicas';
+    src: url('fonts/presidenciafirme-italicascc-webfont.eot');
+    src: url('fonts/presidenciafirme-italicascc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafirme-italicascc-webfont.woff') format('woff'),
+         url('fonts/presidenciafirme-italicascc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafirme-italicascc-webfont.svg#PresidenciaItasCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFirmeVersalitas';
+    src: url('fonts/presidenciafirme-versalitas-webfont.eot');
+    src: url('fonts/presidenciafirme-versalitas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafirme-versalitas-webfont.woff') format('woff'),
+         url('fonts/presidenciafirme-versalitas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafirme-versalitas-webfont.svg#PresidenciaFirmeVersalitas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFuerte';
+    src: url('fonts/presidenciafuerte-webfont.eot');
+    src: url('fonts/presidenciafuerte-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafuerte-webfont.woff') format('woff'),
+         url('fonts/presidenciafuerte-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafuerte-webfont.svg#PresidenciaFuerteRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFuerCifrasClasicas';
+    src: url('fonts/presidenciafuerte-cc-webfont.eot');
+    src: url('fonts/presidenciafuerte-cc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafuerte-cc-webfont.woff') format('woff'),
+         url('fonts/presidenciafuerte-cc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafuerte-cc-webfont.svg#PresidenciaFuerCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFuerteItalicas';
+    src: url('fonts/presidenciafuerte-italicas-webfont.eot');
+    src: url('fonts/presidenciafuerte-italicas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafuerte-italicas-webfont.woff') format('woff'),
+         url('fonts/presidenciafuerte-italicas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafuerte-italicas-webfont.svg#PresidenciaFuerteItalicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaItasCifrasClasicas';
+    src: url('fonts/presidenciafuerte-italicascc-webfont.eot');
+    src: url('fonts/presidenciafuerte-italicascc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafuerte-italicascc-webfont.woff') format('woff'),
+         url('fonts/presidenciafuerte-italicascc-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafuerte-italicascc-webfont.svg#PresidenciaItasCifrasClasicas') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PresidenciaFuerteVersalitas';
+    src: url('fonts/presidenciafuerte-versalitas-webfont.eot');
+    src: url('fonts/presidenciafuerte-versalitas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/presidenciafuerte-versalitas-webfont.woff') format('woff'),
+         url('fonts/presidenciafuerte-versalitas-webfont.ttf') format('truetype'),
+         url('fonts/presidenciafuerte-versalitas-webfont.svg#PresidenciaFuerteVersalitas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.dato 
+{
+	color:#8B0000;
+	font-size:13px;
+	font-weight: bold;
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbCatalogosGrales" Class="WSCarolineDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.30.28.49\Desarrollo;Initial Catalog=dbPLD;User ID=usrAdmPld" SettingsObjectName="BIM.PLDWS.DataAccess.Properties.Settings" SettingsPropertyName="PLDConexionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.stp_ListarCaroline" Method="stp_ListarCaroline">
+    <ElementType Name="stp_ListarCarolineResult">
+      <Column Name="intWSCarolineID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="intTipoPersonaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="intClienteID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vchTipificacion" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="intCalificacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datFecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="bitEstatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_InsertarCaroline" Method="stp_InsertarCaroline">
+    <Parameter Name="intWSCarolineID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="intTipoTipificacionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="intClienteID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="intPersonaID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="intCalificacion" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

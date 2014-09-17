@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BitacoraPLD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TotalCorreo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="bitAutorizaProc" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="bitEstatus" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="bitHistorial" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="bitHomonimo" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="datFecha" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="datFechaRespuesta" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="intBitacoraID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="intSistema" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="intTipoTipificacionID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="vchApMaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchApPaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchCliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchComentario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchCorreoHCM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchIdentificadorInterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchNombreBusq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchNombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchNombreSistema" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchPersonaIncidencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchRelacionCliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchSucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchTipoLista" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchUsuarioAudit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchUsuarioNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchidqeq" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BitacoraPLD" nillable="true" type="tns:BitacoraPLD" />
+  <xs:complexType name="ArrayOfBitacoraPLD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BitacoraPLD" nillable="true" type="tns:BitacoraPLD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBitacoraPLD" nillable="true" type="tns:ArrayOfBitacoraPLD" />
+  <xs:complexType name="ServiceResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultValue" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="ServiceOk" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceResult" nillable="true" type="tns:ServiceResult" />
+</xs:schema>

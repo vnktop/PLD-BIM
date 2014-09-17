@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" />
+  <xs:element name="getFileOnPath">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q1:FileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFileOnPathResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="getFileOnPathResult" nillable="true" type="q2:FileResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setValidatePath">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q3:ValidatePathRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setValidatePathResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="setValidatePathResult" nillable="true" type="q4:ValidateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q5:RemoteFileInfoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="UploadFileResult" nillable="true" type="q6:UploadFileResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyExistFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q7:FileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyExistFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="VerifyExistFileResult" nillable="true" type="q8:ValidateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delFileOnPath">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q9:FileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delFileOnPathResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="delFileOnPathResult" nillable="true" type="q10:ValidateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getZipFileOnPath">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q11:ZipFileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getZipFileOnPathResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="getZipFileOnPathResult" nillable="true" type="q12:FileResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setArchivosZip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="request" nillable="true" type="q13:ZipFileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setArchivosZipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" minOccurs="0" name="setArchivosZipResult" nillable="true" type="q14:ZipFileResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

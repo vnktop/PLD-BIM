@@ -1,0 +1,4 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessEntities\bin\Debug\BIM.PLDWS.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessEntities\bin\Debug\BIM.PLDWS.BusinessEntities.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessEntities\obj\Debug\BIM.PLDWS.BusinessEntities.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\PLDWS\BIM.PLDWS.BusinessEntities\obj\Debug\BIM.PLDWS.BusinessEntities.pdb

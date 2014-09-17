@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="wsHCMDocuments" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wsDocumentHandling" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="wsHCMDocuments" location="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwsDocumentHandling_getFileOnPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFileOnPath" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_getFileOnPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFileOnPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_setValidatePath_InputMessage">
+    <wsdl:part name="parameters" element="tns:setValidatePath" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_setValidatePath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setValidatePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_UploadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_UploadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_VerifyExistFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyExistFile" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_VerifyExistFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyExistFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_delFileOnPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:delFileOnPath" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_delFileOnPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delFileOnPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_getZipFileOnPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:getZipFileOnPath" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_getZipFileOnPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getZipFileOnPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_setArchivosZip_InputMessage">
+    <wsdl:part name="parameters" element="tns:setArchivosZip" />
+  </wsdl:message>
+  <wsdl:message name="IwsDocumentHandling_setArchivosZip_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setArchivosZipResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwsDocumentHandling">
+    <wsdl:operation name="getFileOnPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/getFileOnPath" message="tns:IwsDocumentHandling_getFileOnPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/getFileOnPathResponse" message="tns:IwsDocumentHandling_getFileOnPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setValidatePath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/setValidatePath" message="tns:IwsDocumentHandling_setValidatePath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/setValidatePathResponse" message="tns:IwsDocumentHandling_setValidatePath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/UploadFile" message="tns:IwsDocumentHandling_UploadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/UploadFileResponse" message="tns:IwsDocumentHandling_UploadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyExistFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/VerifyExistFile" message="tns:IwsDocumentHandling_VerifyExistFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/VerifyExistFileResponse" message="tns:IwsDocumentHandling_VerifyExistFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delFileOnPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/delFileOnPath" message="tns:IwsDocumentHandling_delFileOnPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/delFileOnPathResponse" message="tns:IwsDocumentHandling_delFileOnPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getZipFileOnPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/getZipFileOnPath" message="tns:IwsDocumentHandling_getZipFileOnPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/getZipFileOnPathResponse" message="tns:IwsDocumentHandling_getZipFileOnPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setArchivosZip">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsDocumentHandling/setArchivosZip" message="tns:IwsDocumentHandling_setArchivosZip_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsDocumentHandling/setArchivosZipResponse" message="tns:IwsDocumentHandling_setArchivosZip_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="wsDocumentHandling">
+    <wsdl:port name="wsDocumentHandlingEndpoint" binding="i0:wsDocumentHandlingEndpoint">
+      <soap12:address location="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

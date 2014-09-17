@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7100bf29-4b22-4897-92da-b4f4f0fc2572" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="wsDocumentHandling.xsd" MetadataType="Schema" ID="d0d32994-0241-47c0-8878-9581bc5fe814" SourceId="1" SourceUrl="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd2" />
+    <MetadataFile FileName="wsDocumentHandling1.xsd" MetadataType="Schema" ID="aa3b4a5a-a115-4d83-a01d-2ab1b683893c" SourceId="1" SourceUrl="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd0" />
+    <MetadataFile FileName="wsDocumentHandling2.xsd" MetadataType="Schema" ID="8b4529ad-a223-4df8-a01a-b39d02883032" SourceId="1" SourceUrl="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?xsd=xsd1" />
+    <MetadataFile FileName="wsDocumentHandling.wsdl" MetadataType="Wsdl" ID="3b354512-fb59-4c47-a83e-93fdc245d0ab" SourceId="1" SourceUrl="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="wsDocumentHandling.disco" MetadataType="Disco" ID="7fbee779-b70d-4123-bda7-2ffff0b3ddb7" SourceId="1" SourceUrl="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?disco" />
+    <MetadataFile FileName="wsDocumentHandling1.wsdl" MetadataType="Wsdl" ID="679ee148-3698-4310-b763-47b4d8f008b1" SourceId="1" SourceUrl="http://172.30.28.48/wsHCMDocuments/wsDocumentHandling.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

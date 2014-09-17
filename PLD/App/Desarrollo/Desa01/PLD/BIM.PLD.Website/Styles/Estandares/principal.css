@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document Seguro Popular marzo 2011 */
+
+/* Imagen para aplicaciones del Seguro Popular */
+
+@import url(layout.css);
+@import url(formularios.css);
+@import url(menu.css);
+@import url(tablas.css);
+@import url(textos.css);
+@import url(backtop.css);
+@import url(paginacion.css);
+@import url(alertas.css);

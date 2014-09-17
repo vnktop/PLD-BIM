@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Back to top button  codigo
+*/
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: -52px;
+}
+#back-top a {
+	width: 50px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 50px;
+	height: 40px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ededed url(../imagenes/up-arrow.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	border-radius: 3px 0px 0px 3px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 2s;
+	/*sombra para safari y para firefox 
+	
+	sombra horizontal, sombra vertical, suavizado de sombra
+	
+	
+	*/
+	
+	-webkit-box-shadow: -3px 3px 3px  #999;
+	-moz-box-shadow: -3px 3px 3px  #999;
+	
+	
+}
+#back-top a:hover span {
+	background-color: #e3ffd7;
+}
+
+
+

@@ -1,0 +1,10 @@
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\BIM.PLD.Website.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\BIM.PLD.Website.pdb
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\AjaxControlToolkit.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\Ionic.Zip.Reduced.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\Seguridad.DataAccess.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\Seguridad.DataAccessIntegration.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\bin\Seguridad.Logic.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\obj\Debug\BIM.PLD.Website.dll
+C:\TFS\PLD\App\Desarrollo\Desa01\BIM.PLD.Website\obj\Debug\BIM.PLD.Website.pdb

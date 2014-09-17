@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+/* fecha de modificación 19-05-2011*/
+
+
+/*estilos de tablas*/
+table {
+	padding:0px;
+	padding-left:10px;
+	border-collapse:collapse;
+	width:97%;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin-bottom:20px;
+	border: 1px solid #dedede;
+}
+
+td {
+	padding: 3px 3px 3px 10px;
+	height:25px;
+	line-height:25px;
+	vertical-align: top;
+	border: 1px solid #999;
+}
+
+th {
+	font-size:12px;
+	padding: 6px 3px 6px 3px;
+	/*color: #003;*/
+	color: #FFF;
+	height:23px;
+	line-height:23px;
+	border:thin solid #FFD281;
+	text-align:center;
+	background-color:#f2840d;
+}
+
+/* primera fila o encabezado de la tabla */
+/*tr:first-child	{
+	color:#FFF;
+	background-color:#e74e01;*/
+	/*	estilo para degradados de celdas 	*/
+	/*background:-webkit-gradient(linear, left top, left bottom, from(#e86e01), to(#e74e01));
+}*/
+
+/*  fila color oscuro  */
+tr:nth-child(odd)		
+	{ 
+	background-color:#f2f2f2;
+	}
+
+/*  fila color claro  */		
+tr:nth-child(even)		
+	{ 
+	background-color:#dfdfdf;
+	
+	}
+tr:last-child	
+	{ 
+	/*background-color:#e86e01;*/
+	/*	estilo para degradados de celdas 	
+	background:-webkit-gradient(linear, left top, left bottom, from(#fff3d3), to(#e86e01));*/
+}
+
+/*::::::::::::::::::::::::::::::::::::estilo tabla interior sin bordes ni fondos:::::::::::::::::::::::::::::::::: */
+
+.tablaInterior 	
+{
+	border:none;
+	width:100%;
+	background-color: transparent;
+}
+
+.tablaInterior th
+{
+	border:none;
+	border:0px;
+}
+
+.tablaInterior td
+{
+	border:none;
+	border:0px;
+}
+
+	
+td.nobg {
+	background: none;
+	border: none;
+}
+
+tr.nobg{
+	background: none;
+	border: none;
+}
+
+
+.comentario{
+	font: italic 9px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+	padding-right:30px;
+	line-height:25px;
+}
+
+.encabSeccion{
+	background-color:#008000;
+	color:white;
+	font-size:15px;
+	text-align:left;
+}
+
+.botonSeccion{
+	text-align:center;
+}
+
+.mensajeSeccion
+{
+	height:1px;
+	font: 13px bold;
+	color: red;
+}
+
+table.resultados
+{
+	width:100%;
+}
+table.resultados td
+{
+	text-align:left; 
+	padding-left:10px;
+}
+
+
+
+/*Estilos para mostrar u ocultar tablas con  JQUERY*/
+
+.AbrirCerrar {
+	color: #FFF;
+	cursor: pointer;
+	text-align: left;
+	width: 97.7%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 20px;
+	height: 20px;
+	padding:4px;
+	border:1px solid #E86D00;
+	background-color:#F2840D;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	background-image: url(../imagenes/botones.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	font-size: 14px;
+	padding-left: 15px;
+	margin-bottom: -1px;
+}
+.contentabla {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+
+}
+
+
+/* estilos para nombres de los campos de texto, combos y demas componentes de los formularios */
+
+
+.etiquetaForma {
+	font-size:11px;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	color: #154f75;
+	width: 96%;
+	padding: 4px;
+	font-weight: bold;
+	line-height: 14px;
+	height:14px;
+}
+
+.etiquetaForma .img {
+	float:left;
+	margin-right: 8px;
+}
+
+
+/* estilos para generar 2 columnas dentro de una celda */
+.UnaColumnasAl100colorClaro{
+	float:left;
+	width:100%;
+	
+	padding: 3px 3px 3px 12px;
+
+}
+
+.UnaColumnasAl100colorOscuro{
+	float:left;
+	width:100%;
+	
+	padding: 3px 3px 3px 12px;
+
+}
+
+.DosColumnasAl50derecha{
+	float:right;
+	width:48%;
+	padding: 3px 3px 3px 3px;
+}
+.DosColumnasAl50izquierda{
+	float:left;
+	width:48%;
+	padding: 3px 3px 3px 3px;
+}
+
+
+/* estilos para generar 3 columnas dentro de una celda */
+
+.TresColumnasAl33Derecha{
+	float:right;
+	width:32%;
+	padding: 3px 3px 3px 3px;	
+}
+.TresColumnasAl33Centro{
+	float:left;
+	width:32%;
+	padding: 3px 3px 3px 3px;
+}
+
+.TresColumnasAl33Izquierda{
+	float:left;
+	width:32%;
+	padding: 3px 3px 3px 3px;
+}
+
+
+
+
+/* estilos para generar 3 columnas dentro de una encabezado de tabla */
+
+.TresColumnasAl33DerechaTitulo{
+	float:right;
+	width:265px;
+	
+	padding: 3px 3px 3px 12px;
+
+	
+}
+.TresColumnasAl33CentroTitulo{
+	float:left;
+	width:260px;
+	padding: 3px 3px 3px 12px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #F90;
+	border-left-color: #F90;
+}
+
+.TresColumnasAl33IzquierdaTitulo{
+	float:left;
+	width:265px;
+
+	padding: 3px 3px 3px 12px;
+
+}
+
+
+
+
+/* estilos para generar 4 columnas dentro de la tabla */
+
+.CuatroColumnas1derecha{
+	float:right;
+	width:24%;
+	padding: 3px 3px 3px 3px;
+}
+.CuatroColumnas2derecha{
+	float:right;
+	width:23%;
+	padding: 3px 3px 3px 3px;
+}
+
+.CuatroColumnas1izqui{
+	float:left;
+	width:24%;
+	padding: 3px 3px 3px 3px;
+}
+
+
+.CuatroColumnas2izqui{
+	float:left;
+	width:24%;
+	padding: 3px 3px 3px 3px;
+}

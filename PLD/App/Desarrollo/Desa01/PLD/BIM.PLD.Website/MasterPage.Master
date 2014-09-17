@@ -1,0 +1,324 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="Unival.MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="AjaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" id="HeadMaster">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <link rel="shortcut icon" href='App_Images/abicon.ico' />
+    <link href="~/App_Themes/HCMTheme/HipotecariaCasaMexicanaStyle.css" rel="stylesheet"
+        type="text/css" />
+    <link href="~/App_Themes/HCMTheme/MenuPrincipal.css" rel="stylesheet" type="text/css" />
+    <%--<script src="~/JavaScript/funGen.js" type="text/javascript"></script>--%>
+    <%--<script src="~/JavaScript/JSalir.js" type="text/javascript"></script>--%>
+    <script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../JavaScript/funGen.js" type="text/javascript"></script>
+    <script src="../JavaScript/JSalir.js" type="text/javascript"></script>
+     <script src="JavaScript/funGen.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function Check_Alt_Plus_F4(objEvent)
+        {
+            try {
+                var sKey;
+
+                if (window.event)
+                    sKey = window.event.keyCode;
+                else if (objEvent)
+                    sKey = objEvent.which;
+
+                var objEvent = objEvent || window.event;
+
+                if (sKey == 115 && objEvent.altKey)
+                    document.getElementById('ctl00_LinkButton1').click();
+            }
+            catch (ex) {
+                alert(ex.toString());
+            }
+        }
+
+        function doUnload()
+        {
+            var w = document.documentElement.clientWidth - 50;
+            if (w < window.event.clientX && window.event.clientY < 0)
+                document.getElementById('ctl00_LinkButton1').click();
+        }
+
+        function mueveReloj()
+        {
+            momentoActual = new Date()
+            hora = momentoActual.getHours()
+            minuto = momentoActual.getMinutes()
+            segundo = momentoActual.getSeconds()
+
+            horaImprimible = hora + " : " + minuto + " : " + segundo
+
+            ctl00_lblReloj.innerHTML = horaImprimible
+            ctl00_lblTotalMensajes.innerHTML 
+
+            setTimeout("mueveReloj()", 1000)
+        }
+
+    </script>
+    <!-- ContentPlaceHolder HEADER -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="mueveReloj()" onunload="doUnload()">
+    <form id="frmMasterPage" runat="server">
+    <asp:ScriptManager runat="server" ID="ScriptManager_MasterPage" EnablePartialRendering="true">
+    </asp:ScriptManager>   
+    <div>
+        <asp:UpdatePanel ID="UpdatePanelHeader" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <asp:Table ID="Table3" runat="server" BackImageUrl="~/App_Images/fondoTop.jpg" Width="100%"
+                    CellPadding="0" CellSpacing="0">
+                    <asp:TableRow>
+                        <asp:TableCell ColumnSpan="2">
+                            <asp:Table ID="Table4" runat="server" CellPadding="0" CellSpacing="0" Width="100%">
+                                <asp:TableRow>
+                                    <asp:TableCell>
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/App_Images/CabeceroCasaMexicanal.png" />
+                                    </asp:TableCell>
+                                    <asp:TableCell Style="text-align: right;">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="500px">
+                                            <tr style="height: 40%;">
+                                                <td colspan="4" valign="middle">
+                                                    <asp:UpdatePanel runat="server" ID="upaeTimer" UpdateMode="Conditional">
+                                                        <ContentTemplate>
+                                                            <asp:Literal ID="litMsg" runat="server">&nbsp;</asp:Literal>
+                                                        </ContentTemplate>
+                                                    </asp:UpdatePanel>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" style="width: 10%">
+                                                    <asp:Image ID="imgPerfil" runat="server" ImageUrl="~/App_Images/Perfil.png" Width="15px"
+                                                        Height="15px" ToolTip="PUESTO" />
+                                                </td>
+                                                <td class="Perfil" colspan="2" style="width: 40%">
+                                                    <asp:Label ID="lblPerfil" runat="server" CssClass="Perfil"></asp:Label>
+                                                    <div id="box" class="dialog" align="center" style="text-align: center; z-index: 0">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 30%; text-align: center;">
+                                                    <asp:Label ID="lblHora" runat="server" CssClass="Perfil" Text="Hora:&nbsp;"></asp:Label>
+                                                    <asp:Label ID="lblReloj" runat="server" CssClass="Perfil"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    <asp:Image ID="imgUsuario" runat="server" ImageUrl="~/App_Images/Usuario.png" Width="15px"
+                                                        Height="15px" ToolTip="USUARIO" />
+                                                </td>
+                                                <td class="Perfil">
+                                                    <asp:Label ID="lblDescUsuario" runat="server" CssClass="Perfil"> Usuario: </asp:Label>
+                                                </td>
+                                                <td align="center" colspan="2" valign="bottom">
+                                                    <asp:LinkButton ID="ImageButton3" runat="server" ToolTip="Salir" BackColor="Transparent"
+                                                        OnClick="ibtnInicio_Click" CausesValidation="false" Text="Inicio" ForeColor="White" />
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" ToolTip="Salir" BackColor="Transparent"
+                                                        OnClick="lnkSalirSistema_Click" CausesValidation="false" Text="Cerrar Sesion"
+                                                        ForeColor="White" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: White;">
+        <tr>
+            <td>
+                <table style="background-color: #006847; width: 100%;">
+                    <tr>
+                        <td >
+                            <asp:Panel ID="Menu" runat="server" BorderWidth="2px" BackColor="#006847" BorderColor="White">
+                                <asp:Menu ID="menuSistema" runat="server" DynamicEnableDefaultPopOutImage="False"
+                                    StaticEnableDefaultPopOutImage="False" DynamicHorizontalOffset="1" DynamicVerticalOffset="1"
+                                    Orientation="Horizontal" StaticMenuItemStyle-CssClass="menuBar" StaticHoverStyle-CssClass="menuBarHover"
+                                    DynamicMenuItemStyle-CssClass="menuDynamic" DynamicHoverStyle-CssClass="menuDynamicHover">
+                                </asp:Menu>
+                            </asp:Panel>
+                        </td>
+                        <td style="background-color: #006847; width: 20%;" align="center">
+                           <%-- <asp:LinkButton ID="lnkBitacora" runat="server" BackColor="Transparent" CausesValidation="false" 
+                                Text="Usted tiene mensajes en bitacora por responder:" CssClass="Perfil" ForeColor="White"
+                                onclick="lnkBitacora_Click"></asp:LinkButton
+                           --%>
+                            <asp:Label ID="lblTotalMensajes" runat="server" CssClass="Perfil"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <asp:UpdatePanel runat="server" ID="upaeHeader">
+                    <ContentTemplate>
+                        <asp:Table ID="TableHeader" runat="server" Width="100%">
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                    <table width="100%">
+                                        <tr>
+                                            <td style="width: 20%">
+                                            </td>
+                                            <td align="center">
+                                                <table style="width: 100%;">
+                                                    <tr>
+                                                        <td width="10%">
+                                                            &nbsp;
+                                                        </td>
+                                                        <td align="center" width="80%">
+                                                            <asp:Label ID="lblNomModulo" runat="server" CssClass="TitBot"></asp:Label>
+                                                        </td>
+                                                        <td width="10%">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td style="width: 20%">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+        </tr>
+        <tr>
+            <td runat="server" id="BorderContenido">
+                <table id="a" cellpadding="0" cellspacing="0" style="width: 100%;" border="0">
+                    <tr>
+                        <td>
+                            <asp:Panel runat="server" ID="pnlPagina" ScrollBars="Auto" Width="100%" Height="100%">
+                                <table style="width: 98.5%; vertical-align: top" border="0">
+                                    <tr style="height: 1px">
+                                        <td runat="server" id="BottomBorderContenido">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: top">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolderContenido" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: top">
+                                            <%--<uc2:wucNotificacionMsj ID="wucNotificacionMsj1" runat="server" />--%>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>  
+    <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+        <ProgressTemplate>
+            <div class="contCenter" style="width: 100%; height: 100%; position: absolute; top: 0;
+                clear: left; background-image: url(~/App_Images/overlay.png)">
+                <div class="updateProgress">
+                    <span class="updateProgressMessage">Procesando...</span>
+                    <asp:Image ID="idLoading" runat="server" ImageUrl="~/App_Images/process.gif" />
+                </div>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <script language="javascript" type="text/javascript">
+        document.onkeydown = Check_Alt_Plus_F4;
+
+        var oldFunction;
+        var newFunction;
+        var isPostBack = false;
+
+        //Obtiene la referencia de la función a enlazar           
+        newFunction = Calc_Offset;
+
+        //verifica si no se ya se asignado la función onload anteriormente
+        if (window.onload)
+        {
+            //Asigna la funcíón que se enlazo anteriormente
+            oldFunction = window.onload;
+
+            //Se crea la nueva función para poder anidar las anteriores 
+            window.onload = EscapeHtml;
+        }
+        //Asigan la funcion normalmente
+        else { window.onload = newFunction; }
+
+
+        if (window.onresize)
+        {
+            oldFunction = window.onload;
+            window.onresize = EscapeHtml;
+        }
+        else { window.onresize = newFunction; }
+
+        function EscapeHtml()
+        {
+            newFunction();
+            oldFunction();
+        }
+
+        //Redimensiona el panel de contenido deacuerdo al tamaño del explorador del cliente
+        function Calc_Offset()
+        {
+            if (isPostBack == false) {
+                //alert("******")
+                var x;
+                var URL = document.URL;
+
+                try {
+                    if (URL.indexOf("frmFrame.aspx") != -1 || URL.indexOf("frmConfiguracion.aspx") != -1)
+                    {
+                        x = document.getElementById('ctl00_pnlPagina');
+                        x.style.height = parseInt(document.body.parentNode.clientHeight - 150) + 'px';
+                        x.style.width = parseInt(document.body.parentNode.clientWidth) + 'px';
+                        x.style.height = parseInt(document.body.parentNode.clientHeight - 150) + 'px';
+                        x.style.width = parseInt(document.body.parentNode.clientWidth) + 'px';
+                    }
+                    else
+                    {
+                        x = document.getElementById('ctl00_pnlPagina');
+                        if (document.body.parentNode.clientHeight > 0)
+                            x.style.height = parseInt(document.body.parentNode.clientHeight - 215) + 'px';
+
+                        if (document.body.parentNode.clientWidth > 0)
+                            x.style.width = parseInt(document.body.parentNode.clientWidth) + 'px';
+                    }
+                }
+                catch (e)
+                {
+                    if (URL.indexOf("frmFrame.aspx") != -1 || URL.indexOf("frmConfiguracion.aspx") != -1)
+                    {
+                        x.style.width = parseInt(document.body.parentNode.clientWidth) + 'px';
+                        x.style.height = parseInt(document.body.parentNode.clientHeight - 150) + 'px';
+                        x.style.width = parseInt(document.body.parentNode.clientWidth) + 'px';
+                    }
+                    else
+                    {
+                        x = document.getElementById('ctl00_pnlPagina');
+                        x.style.height = parseInt(document.body.parentNode.clientHeight - 215) + 'px';
+                        x.style.width = parseInt(document.body.parentNode.clientWidth) + 'px';
+                    }
+                }
+            }
+        }
+
+    </script>
+    </form>
+</body>
+</html>

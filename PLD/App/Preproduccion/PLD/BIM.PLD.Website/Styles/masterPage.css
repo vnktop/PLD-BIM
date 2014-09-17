@@ -1,0 +1,802 @@
+﻿body 
+{
+    margin: 0px;
+    font-family: Tahoma, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	background-image:url('../Images/fondo_contenedor.png');
+/*	font-variant:normal;
+	font-weight:normal;*/
+}
+
+div, span, td, select, option, input, legend, a, label, textarea  { font-family: Tahoma, Helvetica, sans-serif; }
+
+div#idCard 
+{
+    position: absolute;
+    padding-top: 10px;
+    top: 0;
+    right: 0;
+    width: 619px;
+    height: 135px;
+}
+
+.imgCompany
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+div#idHeader
+{
+/*    height: 70px; 112px OK, 90px recortado */
+    background: url("../Imagenes/fondoTop2.jpg") repeat-x;
+    height: 86px;
+    width: 100%;
+}
+.topTitleValue
+{
+    float: left;
+    width: 100px;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	color: #629B92;/*#194678;*/
+	font-size: 10px;
+    padding-top: 2px;
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.topValueCont
+{
+    float: left;
+    overflow: hidden;
+    width: 285px;
+    height: 12px;
+    padding-top: 2px;
+}
+
+.topValue
+{
+    text-align: left;
+    font-size: 10px;
+    color: #629B92;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+/*#mnuToolBar
+{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 22px;
+    width: 100%;
+}
+
+#contPath
+{
+    float: left;
+    width: 50%;
+}
+
+#contMessages
+{
+    float: left;
+    width: 25%;
+}
+
+#contSalute
+{
+    float: left;
+    width: 15%;
+}*/
+
+#contClose
+{
+    position: absolute;
+    top: 68px;
+    left: 91%;
+    width: 9%;
+}
+
+
+.contCenter
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1042px;
+}
+
+.boton {/*utiliza*/
+	height: 18px;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #003399;
+	text-shadow: White;
+	background-image: url(../img/boton.jpg) !important;
+	background-position: left top !important;
+	text-align: center;
+	margin: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 1px solid #828eb6;
+	border-right: 1px solid #828eb6;
+	border-bottom: 1px solid #828eb6;
+	border-left: 1px solid #828eb6;
+    cursor: pointer;
+}
+
+
+.modalBackground
+{
+    background-color: Gray;
+/*    filter: alpha(opacity=70);
+    opacity: 0.7; */
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.modalMensaje 
+{
+    width: 200px; 
+    background-color: #ffffdd; /* #ffffff **/
+    border-width: 2px; 
+    border-color: #000000; 
+    border-style: solid; 
+    padding: 20px;
+    z-index: 8000;
+    position: absolute;
+}
+
+.modalCatalogo
+{
+    width: 640px; 
+    height: 300px;
+    background-color: #ffffff;
+    border-width: 2px; 
+    border-color: #000000; 
+    border-style: solid; 
+/*    padding: 20px; */
+    z-index: 8000;
+}
+.contMensajesSistema
+{
+    position: absolute;
+    top: 112px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 99998;
+/*    height: 22px; */
+}
+
+.contMensajesSistemaPanel
+{
+    width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color:White; 
+    border: solid 1px gray;
+}
+
+.msgTitulo
+{
+    font-weight: bold;
+}
+
+.msgCerrar
+{
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+    float: right;
+/*    top: -17px; */
+    z-index: 999995;
+}
+
+.msgInfo
+{
+    clear:left;
+    color:Blue;
+    background-color: #CCCCCC;
+    font-weight: bold;
+}
+.msgError
+{
+    clear:left;
+    margin-left: auto;
+    margin-right: auto;
+    color: Red;
+    background-color: Yellow;
+    font-weight: bold;
+}
+
+.msgWaitCont
+{
+     font-weight:bold; 
+     position: absolute; 
+     width:100%; 
+     height:100%; 
+     top: 0; 
+     z-index: 999999;
+}
+
+.msgWait
+{
+    position: relative; 
+    top: 100px; 
+    width: 200px; 
+    height: 20px;
+    background-color: Yellow; 
+    vertical-align: middle;
+}
+
+.btn
+{
+    font-size:10px;
+	font-family: Tahoma, Helvetica, sans-serif;
+/*    font-family:Verdana,Helvetica; */
+    font-weight:bold;
+    color:white;
+    background:#638cb5;
+    border:0px;
+    width:80px;
+    height:19px;
+    margin: 0 5px;
+}
+
+.title
+{
+    color: #FFFFFF;
+    background-color: #0087cf;
+    height: 20px;
+    width: 100%;
+/*    padding: 0px 5px 0px 5px; */
+    
+    vertical-align: middle;
+	font-family: Tahoma, Helvetica, sans-serif;
+/*    font-family: Verdana; */
+    font-size: 10pt;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url('../Imagenes/FondoTit.jpg');
+    background-position: left;
+    background-repeat: repeat;
+    border: none;
+}
+
+.panel
+{
+    border: solid 1px;
+    background-color: #eee;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.row
+{
+    clear: left;
+    padding: 2px 0;
+}
+.modEmpSuc
+{
+    float: left;
+    text-align: right;
+    width: 70px;
+    padding-right: 8px;
+}
+
+.infoAdvertencia
+{
+    color: Red;
+}
+.infoOK
+{
+    color: Blue;
+}
+
+/****************/
+/* MENU: INICIO */
+.StaticMenuStyle
+{
+/*	background-color:#DEEAF6; */
+}
+
+.StaticSelectedStyle
+{
+/*	background-color:#58ACFA !important; */
+	font-weight:bold;
+/*	color: #FFFFFF !important; */
+	height:23px;
+}
+
+.StaticHoverStyle
+{
+	background-color:#0404B4 !important;
+	font-weight:bold; 
+	color:#FFFFFF !important;
+	height:23px;
+}
+
+.StaticMenuItemStyle
+{
+	color:#000066;
+	font-weight:bold; 
+	padding-left:5px; 
+	padding-right:5px; 
+	height:23px;
+}
+
+.backColorMenu {
+    background-color: #A9D0F5;
+}
+
+/* MENU: FIN */
+/****************/
+
+.pnlTitlePage{
+    /* BackColor="#333399"  ForeColor="White" */
+    text-align: center;
+    color: #ffffff;
+    background-color: #333399;
+    font-weight: bold;
+
+}
+
+.contTitlePage{
+    margin: 1px 5px 2px 5px;
+}
+
+.captionTesoreria
+{
+    float: left;
+    width: 200px;
+    text-align: right;
+}
+
+.captionTextLeft
+{
+    float: left;
+    width: 200px;
+    text-align: left;
+}
+
+.captionText
+{
+	float: left;
+    width: 50px;
+    text-align: center;
+}
+
+ 
+.scrollingCheckBoxList 
+{ 
+    border: 1px #808080 solid; 
+    margin: 10px 10px 10px 10px; 
+    height: 100px; 
+}
+
+.TextBoxDynamic
+{
+    float: left;
+    width: 350px;
+    text-align: left;
+}
+
+.captionTesoreriaPago
+{
+    float: left;
+    width: 120px;
+    text-align: right;
+}
+.dataTesoreria
+{
+    float: left;
+    margin-left: 10px;
+}
+.Div
+{
+	clear:left; 	
+	height:5px;	
+}
+
+#PageRootMaster
+{
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1040px;
+    background-color:#F6F6F6;
+}
+
+.footerLegend {
+    background-color: #828085;
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1040px;
+    text-align: center;
+    width: 1040px;
+    
+}
+
+.gvTD
+{
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;   
+    
+    color:#0F1662;
+    background-color:#F2F2F2;
+ }
+ 
+ .gvTDUmbral
+{
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 8px;   
+    
+    color:#0F1662;
+    background-color:#F2F2F2;
+ }
+ 
+ .gvTD td
+{
+    border-right:1px solid #999999;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+ }
+ 
+ .gvHeader
+{
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;  
+    text-align:center;
+    color:#FFFFFF;
+    background-color:#005B46;
+    font-weight:bold;
+ }
+ 
+ .gvFooter
+{
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;  
+    text-align:center;
+    color:#FFFFFF;
+    background-color:#5D7B9D;
+    /*background-color:#005B46;*/
+    font-weight:bold;
+ }
+ 
+  .gvPager
+{
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;  
+    text-align:center;
+    color:#FFFFFF;
+    background-color:#F2840D;
+    font-weight:bold;
+ }
+ 
+ .gvARS
+{
+    color:#284775;
+    background-color:#FFFFFF;
+
+ }
+ 
+ .gvERS
+{
+    background-color:#FFFFFF;
+    
+
+ }
+ 
+  .gvSRS
+{
+    background-color:#E2DED6;
+    font-weight:bold;
+    color:#333333;
+
+ }
+ 
+ .gvCRS
+{
+    font-weight:bold;
+    background-color:#D1DDF1;
+
+ }
+ 
+ .gvFHS
+{
+    color:#284775;
+    background-color:#FFFFFF;
+    font-weight:bold;
+    text-align:right;
+
+ }
+ 
+    
+ #trvMenu
+ {
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color:#0F1662;
+    background-color: #E5E5E5; 
+    font-size: 11px;
+    width: 260px;
+    list-style:circle;
+ }
+ 
+  .trvMenuItem
+ {
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color:#0F1662;
+    background-color: #E5E5E5; 
+    font-size: 11px;
+ }
+ 
+ .pnlEstatico
+        {
+            background-color:#F2F2F2;
+            color: #154F75;
+            font-family: 'Trebuchet MS',Arial,sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+        }
+ 
+.btnEditar
+{
+   background:url(../Images/Grids/Update.png) no-repeat;
+    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnActualizar
+{
+   background:url(../Images/Botones/ButtonActualizar.png) no-repeat;
+    cursor:pointer;
+    width: 100px;
+    height: 28px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnEditarNutrave
+{
+   background:url(../Images/Botones/Edit30X30.png) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;  
+   
+}
+
+
+.btnCLUE
+{
+   background:url(../Images/Botones/ConfigCLUES30X30.png) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnPadecimiento
+{
+   background:url(../Images/Botones/ConfigPX30X30.png) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnSindrome
+{
+   background:url(../Images/Botones/ConfigSX30X30.png) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnOtrosOperativos
+{
+   background:url(../Images/Botones/ConfigOP30X30.png) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnDerecha
+{
+   background:url(../Images/Botones/btnMoverDerecha.png) no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnIzquierda
+{
+   background:url(../Images/Botones/btnMoverIzquierda.png) no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnAgregTodo
+{
+   background:url(../Images/Botones/btnAgregarTodo.png) no-repeat;
+    cursor:pointer;
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnRemovTodo
+{
+   background:url(../Images/Botones/btnRemoverTodo.png) no-repeat;
+    cursor:pointer;
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-position: center;  
+   
+}
+
+.btnEliminar
+{
+    
+   background:url(../Images/Grids/Delete.png) no-repeat;
+    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-position: center;
+   
+}
+
+.btnEliminarNutrave
+{
+    
+   background:url(../Images/Botones/Delete30X30.png) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;
+   
+}
+
+.btnNuevo {
+	background:url(../Images/Botones/btnNuevo.png) no-repeat;
+    cursor:pointer;
+    width: 130px;
+    height: 30px;
+    border: none;
+    background-position: right ;
+}
+
+.btnActualiza {
+	background:url(../Images/Botones/btnGuardar.png) no-repeat;
+    cursor:pointer;
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-position: right ;
+}
+
+.btnDetalles{
+    background:url(../Images/Grids/Details.png) no-repeat;
+    cursor:pointer;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-position: center;
+}
+
+.btnRefrescar
+{
+    background:url(../Images/Botones/btnRefresh.jpg) no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-position: center;
+}
+
+.btnCerrar {
+	background:url(../Images/Botones/btnCerrar.png) no-repeat;
+    cursor:pointer;
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-position: center ;
+}
+
+.btnModificar {
+	background:url(../Images/Botones/btnModificar.png) no-repeat;
+    cursor:pointer;
+    width: 130px;
+    height: 35px;
+    border: none;
+    background-position: center ;
+}
+
+.btnAceptar {
+	background:url(../Images/Botones/btnAceptar.png) no-repeat;
+    cursor:pointer;
+    width: 130px;
+    height: 35px;
+    border: none;
+    background-position: center ;
+}
+
+
+.btnPermisos {
+	background:url(../Images/Botones/Permisos20x20.png) no-repeat;
+    cursor:pointer;
+    width: 130px;
+    height: 35px;
+    border: none;
+    background-position: center ;
+    
+}
+
+.popUpBottonSpace {
+	width:100%; 
+	vertical-align: middle; 
+	height: 35px; 
+	text-align: center;
+}
+
+.btnTransferirMuestra
+{
+    
+   background:url(../Images/Grids/TransferLaboratorioGrid.png) no-repeat;
+    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-position: center;
+   
+}
+
+
+ 
+

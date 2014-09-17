@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HCMDocuments.CoreBusiness.MessageContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="FileRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strFileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strFileType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPathFile" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileRequest" nillable="true" type="tns:FileRequest" />
+  <xs:complexType name="FileResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="btFIleStream" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="strError" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileResponse" nillable="true" type="tns:FileResponse" />
+  <xs:complexType name="ValidatePathRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strPathFile" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidatePathRequest" nillable="true" type="tns:ValidatePathRequest" />
+  <xs:complexType name="ValidateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="blnExistFile" type="xs:boolean" />
+      <xs:element minOccurs="0" name="strResult" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidateResponse" nillable="true" type="tns:ValidateResponse" />
+  <xs:complexType name="RemoteFileInfoRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Length" type="xs:long" />
+      <xs:element minOccurs="0" name="data" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="strServerPath" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RemoteFileInfoRequest" nillable="true" type="tns:RemoteFileInfoRequest" />
+  <xs:complexType name="UploadFileResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUploadResult" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UploadFileResponse" nillable="true" type="tns:UploadFileResponse" />
+  <xs:complexType name="ZipFileRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strComments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strFileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strFileType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPathFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strTempFolder" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZipFileRequest" nillable="true" type="tns:ZipFileRequest" />
+  <xs:complexType name="ZipFileResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="blnIsSuccessful" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZipFileResponse" nillable="true" type="tns:ZipFileResponse" />
+</xs:schema>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbPLD" Class="BitacoraPLDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.30.28.48\pruebas;Initial Catalog=dbPLD;User ID=usrAdmPld" SettingsObjectName="BIM.PLD.DataAccess.Properties.Settings" SettingsPropertyName="dbPLDConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.stp_BusquedaRegistrosPLD" Method="stp_BusquedaRegistrosPLD">
+    <Parameter Name="vchUsuario" Type="System.String" DbType="VarChar(80)" />
+    <Parameter Name="intSistema" Type="System.Int32" DbType="Int" />
+    <ElementType Name="stp_BusquedaRegistrosPLDResult">
+      <Column Name="intBitacoraID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="intIdLN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vchUsuario" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="vchUsuarioNombre" Type="System.String" DbType="VarChar(152)" CanBeNull="true" />
+      <Column Name="intSistemaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vchPersonaIncidencia" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="vchNombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vchApPaterno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vchApMaterno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vchRelacionCliente" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vchComentario" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bitAutorizado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="bitProceso" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="datFecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="datFechaAutorizacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="bitHomonimo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="vchUsuarioAutoriza" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bitEstatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="vchNombreSistema" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="vchTipoLista" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="intTipoTipificacionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vchIdentificadorInterno" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="intVigenciaDias" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.stp_InsertarDesbloqueoPLD" Method="stp_InsertarDesbloqueoPLD">
+    <Parameter Name="intResultado" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="intBitacoraID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="bitAutorizado" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="bitProceso" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="bitHomonimo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="vchUsuarioAutoriza" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="datFechaAutorizacion" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="intVigenciaDias" Type="System.Int32" DbType="Int" />
+    <Parameter Name="vchComentario" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="stp_InsertarDesbloqueoPLDResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

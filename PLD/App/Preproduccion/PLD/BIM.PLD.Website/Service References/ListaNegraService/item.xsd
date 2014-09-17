@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BIM.BusinessEntities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ListaNegra">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUDUSUARIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BITCURPOK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INTIDDISPO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INTLISTANEGRAID" type="xs:int" />
+      <xs:element minOccurs="0" name="VCHAPELLIDOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHAPMATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHAPPATERNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHCURP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHDEPENDENCIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHENTIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHESTATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHFECHANAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHGENERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHIDQEQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHIDREL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHIMSS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHINGRESOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHISSSTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHNOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHNOMCOMPLETO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHPARENTESCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHPUESTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHRAZONSOCIAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHRFC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHRFCMORAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHTIPOLISTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VCHTIPOLISTANEGRA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iProveedorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchCadenaNMP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchCadenaNPM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListaNegra" nillable="true" type="tns:ListaNegra" />
+  <xs:complexType name="ServiceResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultValue" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="ServiceOk" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceResult" nillable="true" type="tns:ServiceResult" />
+  <xs:complexType name="ArrayOfSistemasPLD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SistemasPLD" nillable="true" type="tns:SistemasPLD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSistemasPLD" nillable="true" type="tns:ArrayOfSistemasPLD" />
+  <xs:complexType name="SistemasPLD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="conf" type="xs:int" />
+      <xs:element minOccurs="0" name="sintSistemaID" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="vchDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vchNombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SistemasPLD" nillable="true" type="tns:SistemasPLD" />
+  <xs:complexType name="ArrayOfProveedor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proveedor" nillable="true" type="tns:Proveedor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProveedor" nillable="true" type="tns:ArrayOfProveedor" />
+  <xs:complexType name="Proveedor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iEstatus" type="xs:int" />
+      <xs:element minOccurs="0" name="iProveedorId" type="xs:int" />
+      <xs:element minOccurs="0" name="strNombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Proveedor" nillable="true" type="tns:Proveedor" />
+</xs:schema>

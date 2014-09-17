@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B73DC04-3EA7-42B9-B0CB-D2D4820CE1D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BIM.PLD.Website</RootNamespace>
+    <AssemblyName>BIM.PLD.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50508.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Seguridad.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Seguridad.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad.DataAccessIntegration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Seguridad.DataAccessIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad.Logic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Seguridad.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Images\abicon.ico" />
+    <Content Include="App_Images\accept.png" />
+    <Content Include="App_Images\AddRecord.png" />
+    <Content Include="App_Images\addWin.png" />
+    <Content Include="App_Images\Alerta.png" />
+    <Content Include="App_Images\bg-menu-main.png" />
+    <Content Include="App_Images\bg-menu-main2.png" />
+    <Content Include="App_Images\bg-menu-main_verde.png" />
+    <Content Include="App_Images\boton.jpg" />
+    <Content Include="App_Images\CabeceroCasaMexicanal.png" />
+    <Content Include="App_Images\Correcto.png" />
+    <Content Include="App_Images\cross.png" />
+    <Content Include="App_Images\edit.gif" />
+    <Content Include="App_Images\Error.png" />
+    <Content Include="App_Images\FondoInicio.jpg" />
+    <Content Include="App_Images\fondopantalla.jpg" />
+    <Content Include="App_Images\fondoTop.jpg" />
+    <Content Include="App_Images\minus.png" />
+    <Content Include="App_Images\next.gif" />
+    <Content Include="App_Images\overlay.png" />
+    <Content Include="App_Images\Perfil.png" />
+    <Content Include="App_Images\plus.png" />
+    <Content Include="App_Images\previous.gif" />
+    <Content Include="App_Images\process.gif" />
+    <Content Include="App_Images\Top_Cabecero_NET.jpg" />
+    <Content Include="App_Images\Usuario.png" />
+    <Content Include="App_Themes\HCMTheme\HeaderFlotante.css" />
+    <Content Include="App_Themes\HCMTheme\HipotecariaCasaMexicanaStyle.css" />
+    <Content Include="App_Themes\HCMTheme\MenuPrincipal.css" />
+    <Content Include="Configurador\frmAcciones.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DesbloqueoUsuarios\wfrDesbloqueoUsuario.aspx" />
+    <Content Include="frmInicio.aspx" />
+    <Content Include="frmLogin.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\126_Edit_48x48_72.png" />
+    <Content Include="Images\1_Home.png" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\AddCondition.png" />
+    <Content Include="Images\ajax-loader-big-snake.gif" />
+    <Content Include="Images\alert2.gif" />
+    <Content Include="Images\Anterior.png" />
+    <Content Include="Images\application_form.png" />
+    <Content Include="Images\bg-menu-main.png" />
+    <Content Include="Images\BotClose.PNG" />
+    <Content Include="Images\Botones\Alerta1.png" />
+    <Content Include="Images\Botones\Alerta2.png" />
+    <Content Include="Images\Botones\Alerta3.png" />
+    <Content Include="Images\Botones\bothPDF.png" />
+    <Content Include="Images\Botones\btnAceptar.png" />
+    <Content Include="Images\Botones\btnAgregar.png" />
+    <Content Include="Images\Botones\btnAgregarTodo.png" />
+    <Content Include="Images\Botones\btnAsignacionCLUE.png" />
+    <Content Include="Images\Botones\btnAsignacionOp.png" />
+    <Content Include="Images\Botones\btnAsignacionPx.png" />
+    <Content Include="Images\Botones\btnAsignacionSx.png" />
+    <Content Include="Images\Botones\btnBuscar.png" />
+    <Content Include="Images\Botones\btnCancelar.png" />
+    <Content Include="Images\Botones\btnCerrar.png" />
+    <Content Include="Images\Botones\btnContinuar.png" />
+    <Content Include="Images\Botones\btnEditar.png" />
+    <Content Include="Images\Botones\btnEliminar.png" />
+    <Content Include="Images\Botones\btnEliminarControl.png" />
+    <Content Include="Images\Botones\btnFinalizar.png" />
+    <Content Include="Images\Botones\btnGuardar.png" />
+    <Content Include="Images\Botones\btnImprimir.png" />
+    <Content Include="Images\Botones\btnIngresar.png" />
+    <Content Include="Images\Botones\btnModificar.png" />
+    <Content Include="Images\Botones\btnMoverDerecha.png" />
+    <Content Include="Images\Botones\btnMoverIzquierda.png" />
+    <Content Include="Images\Botones\btnNuevo.png" />
+    <Content Include="Images\Botones\btnRefresh.jpg" />
+    <Content Include="Images\Botones\btnRegresar.png" />
+    <Content Include="Images\Botones\btnRemoverTodo.png" />
+    <Content Include="Images\Botones\btnSalir.png" />
+    <Content Include="Images\Botones\btnVistaPrevia.png" />
+    <Content Include="Images\Botones\bt_skin.png" />
+    <Content Include="Images\Botones\ButtonAceptar.png" />
+    <Content Include="Images\Botones\ButtonActualizar.png" />
+    <Content Include="Images\Botones\ButtonCancelar.png" />
+    <Content Include="Images\Botones\ButtonCerrar.png" />
+    <Content Include="Images\Botones\ButtonIngresar.png" />
+    <Content Include="Images\Botones\ButtonModificar.png" />
+    <Content Include="Images\Botones\ButtonNuevo.png" />
+    <Content Include="Images\Botones\ConfigCLUES20X20.png" />
+    <Content Include="Images\Botones\ConfigCLUES30X30.png" />
+    <Content Include="Images\Botones\ConfigOP20x20.png" />
+    <Content Include="Images\Botones\ConfigOP30X30.png" />
+    <Content Include="Images\Botones\ConfigPX20x20.png" />
+    <Content Include="Images\Botones\ConfigPX30X30.png" />
+    <Content Include="Images\Botones\ConfigSX20x20.png" />
+    <Content Include="Images\Botones\ConfigSX30X30.png" />
+    <Content Include="Images\Botones\Delete24X24.png" />
+    <Content Include="Images\Botones\Delete30X30.png" />
+    <Content Include="Images\Botones\Edit24X24.png" />
+    <Content Include="Images\Botones\Edit30X30.png" />
+    <Content Include="Images\Botones\nextPDF.gif" />
+    <Content Include="Images\Botones\Permisos20x20.png" />
+    <Content Include="Images\Botones\prevPDF.gif" />
+    <Content Include="Images\bullet_ambar.png" />
+    <Content Include="Images\BusquedaArchivo.gif" />
+    <Content Include="Images\ButtonAceptar.png" />
+    <Content Include="Images\ButtonCancelar.png" />
+    <Content Include="Images\ButtonIrAAnterior.png" />
+    <Content Include="Images\ButtonIrASiguiente.png" />
+    <Content Include="Images\ButtonNuevo.png" />
+    <Content Include="Images\Calendar.png" />
+    <Content Include="Images\calendario.png" />
+    <Content Include="Images\CerrarSession.png" />
+    <Content Include="Images\clientes.png" />
+    <Content Include="Images\Construc_1.gif" />
+    <Content Include="Images\Construc_2.gif" />
+    <Content Include="Images\correcto.gif" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\demotop.png" />
+    <Content Include="Images\Error1.gif" />
+    <Content Include="Images\expand_blue.jpg" />
+    <Content Include="Images\flechaAbajo.gif" />
+    <Content Include="Images\flecha_siguiente.png" />
+    <Content Include="Images\flechDer.jpg" />
+    <Content Include="Images\fondopantalla.jpg" />
+    <Content Include="Images\fondoTopSeg.jpg" />
+    <Content Include="Images\fondo_contenedor.png" />
+    <Content Include="Images\GreenProgressBar.gif" />
+    <Content Include="Images\Grids\accept.png" />
+    <Content Include="Images\Grids\Alerta.png" />
+    <Content Include="Images\Grids\ambulanc.gif" />
+    <Content Include="Images\Grids\application_form_add.png" />
+    <Content Include="Images\Grids\ArchivarMuestra.png" />
+    <Content Include="Images\Grids\asterisk_orange.png" />
+    <Content Include="Images\Grids\autobus.gif" />
+    <Content Include="Images\Grids\automovi.gif" />
+    <Content Include="Images\Grids\avion.gif" />
+    <Content Include="Images\Grids\barco.gif" />
+    <Content Include="Images\Grids\bg.gif" />
+    <Content Include="Images\Grids\billete.gif" />
+    <Content Include="Images\Grids\BotClose.PNG" />
+    <Content Include="Images\Grids\Boton.png" />
+    <Content Include="Images\Grids\btn_Green.gif" />
+    <Content Include="Images\Grids\btn_GreenBlack.gif" />
+    <Content Include="Images\Grids\ButtonIrAAnterior.png" />
+    <Content Include="Images\Grids\ButtonIrASiguiente.png" />
+    <Content Include="Images\Grids\calendar.jpg" />
+    <Content Include="Images\Grids\Cancel.png" />
+    <Content Include="Images\Grids\Construc_1.gif" />
+    <Content Include="Images\Grids\Construc_2.gif" />
+    <Content Include="Images\Grids\copia.gif" />
+    <Content Include="Images\Grids\cross.png" />
+    <Content Include="Images\Grids\Delete.png" />
+    <Content Include="Images\Grids\Details.png" />
+    <Content Include="Images\Grids\DownloadArchivo.gif" />
+    <Content Include="Images\Grids\edificio.gif" />
+    <Content Include="Images\Grids\familia.gif" />
+    <Content Include="Images\Grids\group.png" />
+    <Content Include="Images\Grids\hoja.gif" />
+    <Content Include="Images\Grids\hourglass.png" />
+    <Content Include="Images\Grids\ie_logo.jpg" />
+    <Content Include="Images\Grids\Item.png" />
+    <Content Include="Images\Grids\ItemAlter.png" />
+    <Content Include="Images\Grids\Login.jpg" />
+    <Content Include="Images\Grids\Login.png" />
+    <Content Include="Images\Grids\monedas.gif" />
+    <Content Include="Images\Grids\money.png" />
+    <Content Include="Images\Grids\next.gif" />
+    <Content Include="Images\Grids\Nuevo.png" />
+    <Content Include="Images\Grids\overlay.png" />
+    <Content Include="Images\Grids\page-first-disabled.gif" />
+    <Content Include="Images\Grids\page-first.gif" />
+    <Content Include="Images\Grids\page-last-disabled.gif" />
+    <Content Include="Images\Grids\page-last.gif" />
+    <Content Include="Images\Grids\page-next-disabled.gif" />
+    <Content Include="Images\Grids\page-next.gif" />
+    <Content Include="Images\Grids\page-prev-disabled.gif" />
+    <Content Include="Images\Grids\page-prev.gif" />
+    <Content Include="Images\Grids\pareja.gif" />
+    <Content Include="Images\Grids\pencil.png" />
+    <Content Include="Images\Grids\peso.gif" />
+    <Content Include="Images\Grids\Pestana.png" />
+    <Content Include="Images\Grids\Pestana_Amarillo.png" />
+    <Content Include="Images\Grids\piramid1.gif" />
+    <Content Include="Images\Grids\PopUp.png" />
+    <Content Include="Images\Grids\prev.gif" />
+    <Content Include="Images\Grids\Previo.png" />
+    <Content Include="Images\Grids\printer.png" />
+    <Content Include="Images\Grids\RechazarMuestra.png" />
+    <Content Include="Images\Grids\RecibirMuestra.png" />
+    <Content Include="Images\Grids\RegistrarResultado.png" />
+    <Content Include="Images\Grids\Save.png" />
+    <Content Include="Images\Grids\Siguiente.png" />
+    <Content Include="Images\Grids\simple.gif" />
+    <Content Include="Images\Grids\sincroni.gif" />
+    <Content Include="Images\Grids\sort_asc.gif" />
+    <Content Include="Images\Grids\sort_desc.gif" />
+    <Content Include="Images\Grids\star.png" />
+    <Content Include="Images\Grids\Superior_Menu.png" />
+    <Content Include="Images\Grids\tab-active-left.gif" />
+    <Content Include="Images\Grids\tab-active-right.gif" />
+    <Content Include="Images\Grids\tab-active.gif" />
+    <Content Include="Images\Grids\tab-hover-left.gif" />
+    <Content Include="Images\Grids\tab-hover-right.gif" />
+    <Content Include="Images\Grids\tab-hover.gif" />
+    <Content Include="Images\Grids\tab-left.gif" />
+    <Content Include="Images\Grids\tab-line.gif" />
+    <Content Include="Images\Grids\tab-right.gif" />
+    <Content Include="Images\Grids\tab.gif" />
+    <Content Include="Images\Grids\TablaCaptura.png" />
+    <Content Include="Images\Grids\tarjeta.gif" />
+    <Content Include="Images\Grids\Top.png" />
+    <Content Include="Images\Grids\TransferLaboratorioGrid.png" />
+    <Content Include="Images\Grids\Update.png" />
+    <Content Include="Images\HipCasa.jpg" />
+    <Content Include="Images\HipEmpresa.jpg" />
+    <Content Include="Images\Hipotecario.jpg" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\login2.jpg" />
+    <Content Include="Images\logoCubo.png" />
+    <Content Include="Images\logo_small.jpg" />
+    <Content Include="Images\MasterPage.png" />
+    <Content Include="Images\menu_bg.png" />
+    <Content Include="Images\minus.png" />
+    <Content Include="Images\newfldr.ico" />
+    <Content Include="Images\OK.png" />
+    <Content Include="Images\page_white_find.png" />
+    <Content Include="Images\permisos.png" />
+    <Content Include="Images\plus.png" />
+    <Content Include="Images\process.gif" />
+    <Content Include="Images\tab_active.gif" />
+    <Content Include="Images\tab_hover.gif" />
+    <Content Include="Images\tab_Inactive.gif" />
+    <Content Include="Images\tab_left_active.gif" />
+    <Content Include="Images\tab_left_hover.gif" />
+    <Content Include="Images\tab_left_inactive.gif" />
+    <Content Include="Images\tab_right_active.gif" />
+    <Content Include="Images\tab_right_hover.gif" />
+    <Content Include="Images\tab_right_inactive.gif" />
+    <Content Include="Images\ViewAllPages_32x32.png" />
+    <Content Include="Images\warning20x20.png" />
+    <Content Include="JavaScript\funGen.js" />
+    <Content Include="JavaScript\JQuery\jquery-1.6.2.min.js" />
+    <Content Include="JavaScript\JQuery\jquery-ui.js" />
+    <Content Include="JavaScript\JQuery\ui.core.js" />
+    <Content Include="JavaScript\JSalir.js" />
+    <Content Include="Libs\AjaxControlToolkit.dll" />
+    <Content Include="Libs\Ionic.Zip.Reduced.dll" />
+    <Content Include="Libs\Seguridad.DataAccess.dll" />
+    <Content Include="Libs\Seguridad.DataAccessIntegration.dll" />
+    <Content Include="Libs\Seguridad.Logic.dll" />
+    <Content Include="Libs\Utilerias.dll" />
+    <Content Include="ListasNegra\frmAcciones.aspx" />
+    <Content Include="ListasNegra\frmListaNegra.aspx" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.BitacoraPLD.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.Catalogo.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.CatTipoListaNegra.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.ConfiguracionPLD.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.RelCatTipoListNegAccion.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.ServiceResult.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.SistemasPLD.datasource" />
+    <None Include="Properties\DataSources\BIM.BusinessEntities.VerificadorPLD.datasource" />
+    <None Include="Service References\BitacoraPLDServices\BIM.PLD.Website.BitacoraPLDServices.BitacoraPLD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BitacoraPLDServices\BIM.PLD.Website.BitacoraPLDServices.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BitacoraPLDServices\BitacoraPLDServices.wsdl" />
+    <None Include="Service References\BitacoraPLDServices\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BitacoraPLDServices\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BitacoraPLDServices\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogosServices\BIM.PLD.Website.CatalogosServices.Catalogo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CatalogosServices\CatalogoServices.wsdl" />
+    <None Include="Service References\CatalogosServices\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogosServices\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogosServices\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ConfiguracionPLDServices\BIM.PLD.Website.ConfiguracionPLDServices.ConfiguracionPLD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ConfiguracionPLDServices\BIM.PLD.Website.ConfiguracionPLDServices.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ConfiguracionPLDServices\ConfiguracionPLDServices.wsdl" />
+    <None Include="Service References\ConfiguracionPLDServices\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ConfiguracionPLDServices\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ConfiguracionPLDServices\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ListaNegraService\BIM.PLD.Website.ListaNegraService.ListaNegra.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ListaNegraService\BIM.PLD.Website.ListaNegraService.Proveedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ListaNegraService\BIM.PLD.Website.ListaNegraService.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ListaNegraService\BIM.PLD.Website.ListaNegraService.SistemasPLD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ListaNegraService\BIM.PLD.Website.ListaNegraService.TipoLista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ListaNegraService\item.disco" />
+    <None Include="Service References\ListaNegraService\configuration91.svcinfo" />
+    <None Include="Service References\ListaNegraService\configuration.svcinfo" />
+    <None Include="Service References\ListaNegraService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ConfiguracionPLDServices\item.disco" />
+    <None Include="Service References\ConfiguracionPLDServices\configuration91.svcinfo" />
+    <None Include="Service References\ConfiguracionPLDServices\configuration.svcinfo" />
+    <None Include="Service References\ConfiguracionPLDServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BitacoraPLDServices\item.disco" />
+    <None Include="Service References\BitacoraPLDServices\configuration91.svcinfo" />
+    <None Include="Service References\BitacoraPLDServices\configuration.svcinfo" />
+    <None Include="Service References\BitacoraPLDServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TipoCambioServices\BIM.PLD.Website.TipoCambioServices.TipoCambio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TipoCambioServices\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoCambioServices\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoCambioServices\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoCambioServices\TipoCambioServices.wsdl" />
+    <None Include="Service References\TipoListaNegraService\BIM.PLD.Website.TipoListaNegraService.CatTipoListaNegra.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TipoListaNegraService\BIM.PLD.Website.TipoListaNegraService.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TipoListaNegraService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoListaNegraService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoListaNegraService\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoListaNegraService\TipoListaNegraServices.wsdl" />
+    <None Include="Service References\CatalogosServices\item.disco" />
+    <None Include="Service References\CatalogosServices\configuration91.svcinfo" />
+    <None Include="Service References\CatalogosServices\configuration.svcinfo" />
+    <None Include="Service References\CatalogosServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Mantenimiento\frmMntoTipoListaNegra.aspx" />
+    <None Include="Service References\TipoListaNegraService\item.disco" />
+    <None Include="Service References\TipoListaNegraService\configuration91.svcinfo" />
+    <None Include="Service References\TipoListaNegraService\configuration.svcinfo" />
+    <None Include="Service References\TipoListaNegraService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\wsDocumentServices\BIM.PLD.Website.wsDocumentServices.FileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsDocumentServices\BIM.PLD.Website.wsDocumentServices.UploadFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsDocumentServices\BIM.PLD.Website.wsDocumentServices.ValidateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsDocumentServices\BIM.PLD.Website.wsDocumentServices.ZipFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsDocumentServices\wsDocumentHandling.disco" />
+    <None Include="Service References\wsDocumentServices\configuration91.svcinfo" />
+    <None Include="Service References\wsDocumentServices\configuration.svcinfo" />
+    <None Include="Service References\wsDocumentServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TipoCambioServices\item.disco" />
+    <None Include="Service References\TipoCambioServices\configuration91.svcinfo" />
+    <None Include="Service References\TipoCambioServices\configuration.svcinfo" />
+    <None Include="Service References\TipoCambioServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\catalogos.css" />
+    <Content Include="Styles\Estandares\alertas.css" />
+    <Content Include="Styles\Estandares\backtop.css" />
+    <Content Include="Styles\Estandares\formularios.css" />
+    <Content Include="Styles\Estandares\horinaja.css" />
+    <Content Include="Styles\Estandares\layout.css" />
+    <Content Include="Styles\Estandares\menu.css" />
+    <Content Include="Styles\Estandares\paginacion.css" />
+    <Content Include="Styles\Estandares\principal.css" />
+    <Content Include="Styles\Estandares\tablas.css" />
+    <Content Include="Styles\Estandares\textos.css" />
+    <Content Include="Styles\Formatos.css" />
+    <Content Include="Styles\GeneraDinamico.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\masterPage.css" />
+    <Content Include="Styles\PopUpControls.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\sliding-panel.css" />
+    <Content Include="Styles\Tab.css" />
+    <Content Include="Styles\UI\jquery.ui.accordion.css" />
+    <Content Include="Styles\UI\jquery.ui.all.css" />
+    <Content Include="Styles\UI\jquery.ui.autocomplete.css" />
+    <Content Include="Styles\UI\jquery.ui.base.css" />
+    <Content Include="Styles\UI\jquery.ui.button.css" />
+    <Content Include="Styles\UI\jquery.ui.core.css" />
+    <Content Include="Styles\UI\jquery.ui.datepicker.css" />
+    <Content Include="Styles\UI\jquery.ui.dialog.css" />
+    <Content Include="Styles\UI\jquery.ui.progressbar.css" />
+    <Content Include="Styles\UI\jquery.ui.resizable.css" />
+    <Content Include="Styles\UI\jquery.ui.selectable.css" />
+    <Content Include="Styles\UI\jquery.ui.slider.css" />
+    <Content Include="Styles\UI\jquery.ui.tabs.css" />
+    <Content Include="Styles\UI\jquery.ui.theme.css" />
+    <Content Include="TipoCambio\frmTCAutomatico.aspx" />
+    <Content Include="TipoCambio\frmTCManual.aspx" />
+    <Content Include="UserControl\Comun\Mensaje.ascx" />
+    <Content Include="UserControl\Comun\wucBusquedaInteligente.ascx" />
+    <Content Include="UserControl\Comun\wucNotificacionMsj.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\ListaNegraService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ListaNegraService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ListaNegraService\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ListaNegraService\ListaNegraServices.wsdl" />
+    <None Include="Service References\wsDocumentServices\wsDocumentHandling.wsdl" />
+    <None Include="Service References\wsDocumentServices\wsDocumentHandling.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsDocumentServices\wsDocumentHandling1.wsdl" />
+    <None Include="Service References\wsDocumentServices\wsDocumentHandling1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsDocumentServices\wsDocumentHandling2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurador\frmAcciones.aspx.cs">
+      <DependentUpon>frmAcciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurador\frmAcciones.aspx.designer.cs">
+      <DependentUpon>frmAcciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesbloqueoUsuarios\wfrDesbloqueoUsuario.aspx.cs">
+      <DependentUpon>wfrDesbloqueoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesbloqueoUsuarios\wfrDesbloqueoUsuario.aspx.designer.cs">
+      <DependentUpon>wfrDesbloqueoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.aspx.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInicio.aspx.designer.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ListasNegra\frmAcciones.aspx.cs">
+      <DependentUpon>frmAcciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListasNegra\frmAcciones.aspx.designer.cs">
+      <DependentUpon>frmAcciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListasNegra\frmListaNegra.aspx.cs">
+      <DependentUpon>frmListaNegra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListasNegra\frmListaNegra.aspx.designer.cs">
+      <DependentUpon>frmListaNegra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListasNegra\ListaNegra.cs" />
+    <Compile Include="Mantenimiento\frmMntoTipoListaNegra.aspx.cs">
+      <DependentUpon>frmMntoTipoListaNegra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmMntoTipoListaNegra.aspx.designer.cs">
+      <DependentUpon>frmMntoTipoListaNegra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BitacoraPLDServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CatalogosServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ConfiguracionPLDServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ListaNegraService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TipoCambioServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TipoListaNegraService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wsDocumentServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCambio\frmTCAutomatico.aspx.cs">
+      <DependentUpon>frmTCAutomatico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TipoCambio\frmTCAutomatico.aspx.designer.cs">
+      <DependentUpon>frmTCAutomatico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCambio\frmTCManual.aspx.cs">
+      <DependentUpon>frmTCManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TipoCambio\frmTCManual.aspx.designer.cs">
+      <DependentUpon>frmTCManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Comun\Mensaje.ascx.cs">
+      <DependentUpon>Mensaje.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Comun\Mensaje.ascx.designer.cs">
+      <DependentUpon>Mensaje.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Comun\wucBusquedaInteligente.ascx.cs">
+      <DependentUpon>wucBusquedaInteligente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Comun\wucBusquedaInteligente.ascx.designer.cs">
+      <DependentUpon>wucBusquedaInteligente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Comun\wucNotificacionMsj.ascx.cs">
+      <DependentUpon>wucNotificacionMsj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Comun\wucNotificacionMsj.ascx.designer.cs">
+      <DependentUpon>wucNotificacionMsj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utileria\Utileria.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\HCMTheme\Button.skin" />
+    <Content Include="App_Themes\HCMTheme\Calendar.skin" />
+    <Content Include="App_Themes\HCMTheme\CollapsiblePanel.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBoxRFC_PF_PM.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Calendario.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_CURP.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Decimal.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Deshabilitado.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Letras.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Numero.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_NumeroDecimal.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_NumeroDecimal3Dig.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_NumeroDecimal4Dig.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_NumeroDecimal5Dig.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Numero_Espacio.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Observacion.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_RFCPF.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_RFCPM.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_SinCharEsp.skin" />
+    <Content Include="App_Themes\HCMTheme\TextBox_Texto.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ListasNegra\tmp\" />
+    <Folder Include="Repositorio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BitacoraPLDServices\" />
+    <WCFMetadataStorage Include="Service References\CatalogosServices\" />
+    <WCFMetadataStorage Include="Service References\ConfiguracionPLDServices\" />
+    <WCFMetadataStorage Include="Service References\ListaNegraService\" />
+    <WCFMetadataStorage Include="Service References\TipoCambioServices\" />
+    <WCFMetadataStorage Include="Service References\TipoListaNegraService\" />
+    <WCFMetadataStorage Include="Service References\wsDocumentServices\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
